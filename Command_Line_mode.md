@@ -1,5 +1,14 @@
 # <a name="command-line-mode"></a>Command Line Mode
 
+* [Saving changes](#saving-changes)
+* [Exit Vim](#exit-vim)
+* [Combining Save and Quit](#combining-save-and-quit)
+* [Editing buffers](#editing-buffers)
+* [Search](#search)
+* [Search and Replace](#search-and-replace)
+* [Editing lines filtered by pattern](#editing-lines-filtered-by-pattern)
+* [Shell Commands](#shell-commands)
+* [Miscellaneous](#miscellaneous)
 
 Any operation is completed by pressing `Enter` key after which the mode changes back to Normal mode  
 Press `Esc` key to ignore whatever is typed and return to Normal mode
