@@ -301,6 +301,7 @@ For more info `:h text-objects`
 * `gf` open the file pointed by file path under the cursor
     * `:h gf` and `:h 'suffixesadd'` for more info
 * `*` searches the word under the cursor in forward direction - matches only the whole word
+    * `shift+left mouse click` can also be used in gvim
 * `g*` searches the word under the cursor in forward direction - matches as part of another word also
 * `#` searches the word under the cursor in backward direction - matches only the whole word
 * `g#` searches the word under the cursor in backward direction - matches as part of another word also
