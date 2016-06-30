@@ -113,7 +113,8 @@ Highlight settings
 ### <a name="search-and-replace"></a>Search and Replace
 
 General syntax is `:range s/searchpattern/replacestring/flags`  
-`s` is short-form for `substitute`
+`s` is short-form for `substitute`  
+Space between `range` and `s` is optional and may be used for clarity
 
 * `:. s/a/b/` replace first occurrence of character a with character b on current line only
 * `:2 s/apple/Mango/i` replace first occurrence of word apple with word Mango only on second line
