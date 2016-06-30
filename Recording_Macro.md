@@ -4,6 +4,7 @@
 * [Example 1](#example-1)
 * [Example 2](#example-2)
 * [Example 3](#example-3)
+* [Further Reading](#further-reading)
 
 <br>
 ### <a name="need-for-macro"></a>Need for Macro
@@ -130,30 +131,9 @@ to table of contents, like this
     * or `vip: normal @b`
 * Note: again, this is a demonstration and `s/\v.*"(.*)".*\>(.*)/* [\2](#\1)/` is perhaps better option
 
-While writing the markdown text, the various Headings would actually be in different lines, for example like this:
+<br>
+### <a name="further-reading"></a>Further Reading
 
-```
-# Intro Guide
-This is an introduction guide.
-
-# Basic steps
-Some basic steps
-```
-
-* `let @a = '0f a<a name=""></a><Esc>ly$F"Pvi"guvi":s/\%V\s\+/-/g<Enter>'`
-    * For Enter key, press `Ctrl+v` followed `Enter` key in Insert mode, it will look like `^M`
-* `:g/^# / normal @a` change Headings to desired format
-
-```
-# <a name="intro-guide"></a>Intro Guide
-This is an introduction guide.
-
-# <a name="basic-steps"></a>Basic steps
-Some basic steps
-```
-
-* Then, use `:g/^# /t0` to paste all the Headings at start of file, followed by `vip: normal @b` to change them as per table of contents format
-    * grep can be used as well `:0r! grep '^\# ' %`
-* Or, you know, use another macro - `let @c = ":g/^# /t0<Enter>vip: normal @b<Enter>"`
-    * For Enter key, press `Ctrl+v` followed `Enter` key in Insert mode, it will look like `^M`
-* Or, even better, combine previous step as well - `let @c = ":g/^# / normal @a<Enter>:g/^# /t0<Enter>vip: normal @b<Enter>"`
+* [A Gentle Introduction to Macros](http://usevim.com/2012/08/10/macros/)
+* [Advanced vim macros](https://sanctum.geek.nz/arabesque/advanced-vim-macros/)
+* [macro Q&A on vi stackexchange](http://vi.stackexchange.com/search?tab=votes&q=macro)
