@@ -56,6 +56,7 @@ Multiple files can be opened in Vim within same tab and/or different tab
     * use `:sp filename` for short
 * `:vsplit filename` open file for editing in new vertical split screen
     * use `:vs filename` for short
+* If filename is not given, the current one is used
 
 **Multiple tabs**
 
@@ -63,7 +64,7 @@ Multiple files can be opened in Vim within same tab and/or different tab
     * `:h :tabe` for more info and different options
 * `:tabn` to go to next tab
     * `gt` and `Ctrl+Page Down` can also be used
-    * `2gt` to move to second tab
+    * `2gt` to move to second tab, the number specified is absolute, not relative
 * `:tabp` to go to previous tab
     * `gT` and `Ctrl+Page Up`  can also be used
 * `:tabr` to go to first tab (r for rewind)
@@ -146,6 +147,7 @@ Also, check out `:h :t` and `:h :m` to copy/move the filtered lines using `:g` a
 
 One can also use shell commands within Vim
 
+* `:!ls` execute shell command and display output, doesn't change contents of file
 * `:.! date` replace current line with output of `date` command
 * `:%! sort` sort all lines of file
 * `:3,8! sort` sort only lines 3 to 8 of file
