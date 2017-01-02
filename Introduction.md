@@ -67,6 +67,9 @@ Phew, what a complicated procedure to write a simple line of text, isn't it? Thi
 * `gvim -R script.sh` opens script.sh in Readonly mode, changes can still be made and saved despite warning messages shown (for example, by using `:w!`)
 * `gvim -M script.sh` opens script.sh in stricter Readonly mode, Vim won't allow any changes to be made unless `:set modifiable` is used and file can't be saved until `:set write` is used
 * `gvim +/while script.sh` open script.sh and place the cursor under first occurrence of while
+* `gvim +25 script.sh` open script.sh with cursor on 25th line
+* `gvim -c 'normal =G' script.pl` open script.pl and execute the normal mode command `=G`
+* `gvim -c ':%s/search/replace/g' script.pl` open script.pl and execute the given Command Line mode command
 * `gvim -h` for complete list of options
 
 <br>
