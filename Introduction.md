@@ -48,7 +48,7 @@ Phew, what a complicated procedure to write a simple line of text, isn't it? Thi
 * For built-in help, use `Help` menu in gvim, or type `:help` in Normal mode (`:h` is short for `:help`)
     * `:h usr_toc.txt` table of contents for Vim User Manual - 'Task oriented explanations, from simple to complex.  Reads from start to end like a book.'
     * `:h reference_toc` table of contents for Reference Manual - 'Precise description of how everything in Vim works.'
-    * also see `:h help-summary` and [guideline to use help](http://vi.stackexchange.com/questions/2136/how-do-i-navigate-to-topics-in-vims-documentation)
+    * also see `:h help-summary` and [guideline to use help](https://vi.stackexchange.com/questions/2136/how-do-i-navigate-to-topics-in-vims-documentation)
 * [best introduction to Vi and its core editing concepts explained as a language](https://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim/1220118#1220118)
     * this stackoverflow thread also has numerous tips and tricks to use Vim
 * About, Download, Documentation, etc - https://github.com/vim/vim
