@@ -134,6 +134,6 @@ to table of contents, like this
 <br>
 ### <a name="further-reading"></a>Further Reading
 
-* [A Gentle Introduction to Macros](http://usevim.com/2012/08/10/macros/)
+* [A Gentle Introduction to Macros](https://medium.com/usevim/vim-101-a-gentle-introduction-to-macros-db6b066e5b38)
 * [Advanced vim macros](https://sanctum.geek.nz/arabesque/advanced-vim-macros/)
-* [macro Q&A on vi stackexchange](http://vi.stackexchange.com/search?tab=votes&q=macro)
+* [macro Q&A on vi stackexchange](https://vi.stackexchange.com/search?tab=votes&q=macro)
