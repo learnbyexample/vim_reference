@@ -80,7 +80,7 @@ If multiple buffers are open and you want to apply common editing across all of 
 * `:silent! bufdo %s/searchpattern/replacestring/g | update` substitute across all buffers, `silent` skips displaying normal messages and `!` skips error messages as well
 * It is not an efficient way to open buffers just to search and replace a pattern across multiple files, use tools like `sed,awk,perl` instead
 * `:h :bufdo`, `:h :windo` and `:h :silent` for more info
-* [how to change multiple files](https://vimcasts.org/episodes/using-argdo-to-change-multiple-files/)
+* [how to change multiple files](http://vimcasts.org/episodes/using-argdo-to-change-multiple-files/)
 * [Effectively work with multiple files](https://stackoverflow.com/questions/53664/how-to-effectively-work-with-multiple-files-in-vim)
 * [When to use Buffers and when to use Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/)
 
