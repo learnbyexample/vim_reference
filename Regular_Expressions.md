@@ -136,7 +136,7 @@ For more info, `:h /character-classes`
 For more info
 
 * `:h /magic`
-* [Magicness in Vim regex](https://andrewradev.com/2011/05/08/vim-regexes/)
+* [Magicness in Vim regex](http://andrewradev.com/2011/05/08/vim-regexes/)
 * [Excellent examples and other Vim settings on case sensitivity](https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim)
 
 <br>
@@ -168,5 +168,5 @@ One can also use other characters like `#^$` instead of `/`
 ### <a name="further-reading"></a>Further Reading
 
 * `:h regular-expression`
-* [vimregex](https://vimregex.com/)
+* [vimregex](http://vimregex.com/)
 * [What does this regex mean?](https://stackoverflow.com/questions/22937618/reference-what-does-this-regex-mean)
