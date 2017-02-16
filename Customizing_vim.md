@@ -67,7 +67,7 @@ Mappings allow to create new commands or redefine existing ones. Mappings can be
 <br>
 ### <a name="custom-mappings"></a>Custom Mappings
 
-Examples here use function keys. A better approach could be to use [Leaders](https://learnvimscriptthehardway.stevelosh.com/chapters/06.html)
+Examples here use function keys. A better approach could be to use [Leaders](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html)
 
 * `nnoremap #2 :w<CR>` Press `F2` function key to save file. Pressing `Esc` key gets quite natural after writing text in Insert mode. Instead of multiple key presses to save using Command Line, `F2` is easier
 * `inoremap <F2> <Esc>:w<CR>a` Press `F2` to save file in Insert mode as well. Note the mapping sequence - it requires going to Normal mode first. Hence the `a` command to get back to Insert mode
@@ -106,8 +106,8 @@ augroup END
 **Further Reading**
 
 * `:h :autocmd` and `:h autocmd-groups`
-* [autocmd tutorial](https://learnvimscriptthehardway.stevelosh.com/chapters/12.html)
-* [augroup tutorial](https://learnvimscriptthehardway.stevelosh.com/chapters/14.html)
+* [autocmd tutorial](http://learnvimscriptthehardway.stevelosh.com/chapters/12.html)
+* [augroup tutorial](http://learnvimscriptthehardway.stevelosh.com/chapters/14.html)
 
 <br>
 ### <a name="matchit"></a>Matchit
@@ -124,15 +124,14 @@ To match keywords like HTML tags, if-else pairs, etc with `%`, one can install `
 <br>
 ### <a name="further-reading"></a>Further Reading
 
-* [Excellent book on Vimscript and customizing Vim](https://learnvimscriptthehardway.stevelosh.com/)
-* [Vim plugins](https://vimawesome.com/)
+* [Excellent book on Vimscript and customizing Vim](http://learnvimscriptthehardway.stevelosh.com/)
+* [Vim plugins](http://vimawesome.com/)
 * [Useful .vimrc tips](https://stackoverflow.com/questions/164847/what-is-in-your-vimrc)
 * `~/.vimrc` from various users:
     * [vim-sensible](https://github.com/tpope/vim-sensible)
     * [sane defaults](https://github.com/nicolasmccurdy/sane-defaults/blob/master/home/.vimrc)
     * [minimal for new users](https://gist.github.com/benmccormick/4e4bc44d8135cfc43fc3)
-    * [generate vimrc](https://vimconfig.com/)
-    * [advanced](https://gitlab.com/AssailantLF/vimrc/blob/master/.vimrc)
+    * [generate vimrc](http://vimconfig.com/)
     * [building vimrc from scratch](https://marcgg.com/blog/2016/03/01/vimrc-example)
 * [adding custom keywords to match on %](https://stackoverflow.com/questions/27498221/vim-highlight-matching-begin-end)
 * [using gf to open file in new tab or splits](https://vi.stackexchange.com/questions/3364/open-filename-under-cursor-like-gf-but-in-a-new-tab-or-split)
