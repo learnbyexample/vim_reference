@@ -8,13 +8,14 @@
 * [Abbreviations](#abbreviations)
 * [autocmd](#autocmd)
 * [Matchit](#matchit)
+* [Guioptions](#guioptions)
 * [Further Reading](#further-reading)
 
 Different programming languages require different syntax, indentation, etc. The company you work for might have its own text format and guidelines. You might want to create a short-cut for frequently used commands or create your own command
 
-* `~/.vimrc` put your custom settings in this file
-* All the settings presented here is also available [online](https://github.com/learnbyexample/scripting_course/blob/master/.vimrc)
+* `~/.vimrc` put your custom settings in this file, see [this sample vimrc file](https://github.com/learnbyexample/scripting_course/blob/master/.vimrc) for example
 * Based on Vim version `7.4`
+* Some mappings are suitable only for gvim
 
 <br>
 ### <a name="general-settings"></a>General Settings
@@ -26,14 +27,22 @@ Different programming languages require different syntax, indentation, etc. The 
     * [Disabling swap files](https://stackoverflow.com/questions/821902/disabling-swap-files-creation-in-vim)
 * `colorscheme murphy` a dark colored theme
 * `set showcmd` show partial Normal mode command on Command Line and character/line/block-selection for Visual mode
+* `set wildmode=longest,list,full` bash like Tab completion
+    * first tab hit will complete as much as possible
+    * second tab hit will provide a list
+    * third and subsequent tabs will cycle through
 * [How to set persistent Undo](https://stackoverflow.com/questions/5700389/using-vims-persistent-undo)
 
 <br>
 ### <a name="text-and-indent-settings"></a>Text and Indent Settings
 
 * `set textwidth=0` no. of characters in a line after which Vim will automatically create new line
-* `filetype plugin indent on` Vim installation comes with lot of defaults. `:echo $VIMRUNTIME` gives your installation directory. One of them is `indent` directory which has indent styles for 100+ different file types. Using this setting directs Vim to apply based on file extensions like `.pl for Perl`, `.c for C`, `.v for verilog`, etc
-* `set autoindent` copy indent on starting a new line, useful for files not affected by `filetype plugin indent on`
+* `filetype plugin indent on` Vim installation comes with lot of defaults
+    * `:echo $VIMRUNTIME` gives your installation directory. One of them is `indent` directory which has indent styles for 100+ different file types
+    * Using this setting directs Vim to apply based on file extensions like `.pl for Perl`, `.c for C`, `.v for verilog`, etc
+* `set autoindent` copy indent on starting a new line
+    * useful for files not affected by `filetype plugin indent on`
+    * See also `:h smartindent`
 * `set shiftwidth=4` defines how many characters to use when using indentation commands like `>>`
 * `set tabstop=4` defines how many characters Tab key is made of
 * `set expandtab` change Tab key to be made up of Space characters instead of single Tab character
@@ -67,13 +76,31 @@ Mappings allow to create new commands or redefine existing ones. Mappings can be
 <br>
 ### <a name="custom-mappings"></a>Custom Mappings
 
-Examples here use function keys. A better approach could be to use [Leaders](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html)
+Normal mode
 
 * `nnoremap #2 :w<CR>` Press `F2` function key to save file. Pressing `Esc` key gets quite natural after writing text in Insert mode. Instead of multiple key presses to save using Command Line, `F2` is easier
-* `inoremap <F2> <Esc>:w<CR>a` Press `F2` to save file in Insert mode as well. Note the mapping sequence - it requires going to Normal mode first. Hence the `a` command to get back to Insert mode
 * `nnoremap #3 :wq<CR>` Press `F3` to save the file and quit
 * `nnoremap #4 ggdG` Press `F4` to delete entire contents of file
 * `nnoremap #5 gg"+yG` Press `F5` to copy entire contents of file to system clipboard
+* `nnoremap Y y$` change Y to behave similar to D and C
+* Check out use of [Leaders](http://learnvimscriptthehardway.stevelosh.com/chapters/06.html) for even more mapping tricks
+
+Insert mode
+
+* `inoremap <F2> <Esc>:w<CR>a` Press `F2` to save file in Insert mode as well
+    * Note the mapping sequence - it requires going to Normal mode first. Hence the `a` command to get back to Insert mode
+    * `inoremap <F2> <C-o>:w<CR>` alternate way, Ctrl+o allows to execute a command and return back to insert mode automatically
+* `inoremap <C-e> <Esc>ea` Ctrl+e to move to end of word
+* `inoremap <C-b> <C-o>b` Ctrl+b to move to beginning of word
+* `inoremap <C-a> <C-o>A` Ctrl+a to move to end of line
+* `inoremap <C-s> <C-o>I` Ctrl+s to move to start of line
+    * Can't use Ctrl+i remapping as it affects Tab as well
+* `inoremap <C-v> <C-o>"+p` Ctrl+v to paste from clipboard in insert mode
+    * Ctrl+q can be used instead of Ctrl+v to insert characters like Enter key (may not work with vim)
+    * See also [How to make vim paste from (and copy to) system's clipboard?](https://stackoverflow.com/questions/11489428/how-to-make-vim-paste-from-and-copy-to-systems-clipboard)
+* `inoremap <C-l> <C-x><C-l>` Ctrl+l to autocomplete matching lines
+    * just saves the additional Ctrl+x, see also `:h i_CTRL-x`
+* See also `:h ins-special-special`
 
 <br>
 ### <a name="abbreviations"></a>Abbreviations
@@ -120,6 +147,13 @@ To match keywords like HTML tags, if-else pairs, etc with `%`, one can install `
 * `mkdir -p ~/.vim/plugin` create required directories from terminal or within Vim if you prefer
 * `cp /usr/share/vim/vim74/macros/matchit.vim ~/.vim/plugin/` replace `/usr/share/vim/vim74` with output of echo if it is different in your case
 * `:h matchit-install` for more info
+
+<br>
+### <a name="guioptions"></a>Guioptions
+
+* `set guioptions-=m` no menu bar
+* `set guioptions-=T` no tool bar
+* See also `:h guioptions`
 
 <br>
 ### <a name="further-reading"></a>Further Reading
