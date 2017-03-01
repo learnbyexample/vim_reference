@@ -142,6 +142,17 @@ The four arrow keys can be used in Vim to move around as in any other text edito
 * `0` move to beginning of current line - column number 1
 * `^` move to beginning of first non-blank character of current line, useful for indented lines
 * `$` move to end of current line
+* `g_` move to last non-blank character of current line
+* `3|` move to 3rd column character
+
+Moving within long lines(spread over multiple screen lines)
+
+* `g0` to move to beginning of current screen line
+* `g$` to move to end of current screen line
+* `gm` to move to middle of current screen line
+* `g^` to move to first non-blank character of current screen line
+
+See `:h left-right-motions` for more info
 
 <br>
 ### <a name="word-and-character-based-move"></a>Word and Character based move
