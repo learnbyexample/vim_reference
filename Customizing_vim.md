@@ -18,6 +18,7 @@ Different programming languages require different syntax, indentation, etc. The 
 * Some mappings are suitable only for gvim
 
 <br>
+
 ### <a name="general-settings"></a>General Settings
 
 * `set history=100` increase default history from 20 to 100
@@ -34,6 +35,7 @@ Different programming languages require different syntax, indentation, etc. The 
 * [How to set persistent Undo](https://stackoverflow.com/questions/5700389/using-vims-persistent-undo)
 
 <br>
+
 ### <a name="text-and-indent-settings"></a>Text and Indent Settings
 
 * `set textwidth=0` no. of characters in a line after which Vim will automatically create new line
@@ -50,6 +52,7 @@ Different programming languages require different syntax, indentation, etc. The 
 * [Show vertical bar at particular column as visual guide for required textwidth](https://superuser.com/questions/22444/make-vim-display-a-line-at-the-edge-of-the-set-textwidth)
 
 <br>
+
 ### <a name="mappings"></a>Mappings
 
 Mappings allow to create new commands or redefine existing ones. Mappings can be defined for specific mode. Examples given here are restricted to specific mode and non-recursive
@@ -61,6 +64,7 @@ Mappings allow to create new commands or redefine existing ones. Mappings can be
 * `:h :map-commands` for more info
 
 <br>
+
 ### <a name="search-settings"></a>Search Settings
 
 * `set incsearch` the cursor would move to matching pattern as you type
@@ -74,6 +78,7 @@ Mappings allow to create new commands or redefine existing ones. Mappings can be
     * Note that command also retains default behavior of Space key
 
 <br>
+
 ### <a name="custom-mappings"></a>Custom Mappings
 
 Normal mode
@@ -103,6 +108,7 @@ Insert mode
 * See also `:h ins-special-special`
 
 <br>
+
 ### <a name="abbreviations"></a>Abbreviations
 
 From typo correction to short-cuts to save typing, abbreviations are quite useful. Abbreviations get expanded only when they stand apart as a word by itself and not part of another word. For example, if the letter p is abbreviated, it is activated in variety of ways like pressing Esc, Space, Enter, Punctuations, etc not when it is part of words like pen, up, etc
@@ -113,6 +119,7 @@ From typo correction to short-cuts to save typing, abbreviations are quite usefu
 * `inoreabbrev @a always @()<CR>begin<CR>end<Esc>2k$` This one works best with @a followed by Esc key in Insert mode. This inserts an empty always block (used in Verilog) and places the cursor at end of first line. After which use `i` command to type inside the parenthesis
 
 <br>
+
 ### <a name="autocmd"></a>autocmd
 
 Execute commands based on events
@@ -137,6 +144,7 @@ augroup END
 * [augroup tutorial](http://learnvimscriptthehardway.stevelosh.com/chapters/14.html)
 
 <br>
+
 ### <a name="matchit"></a>Matchit
 
 * `set matchpairs+=<:>` adds <> to `%` matchpairs 
@@ -149,6 +157,7 @@ To match keywords like HTML tags, if-else pairs, etc with `%`, one can install `
 * `:h matchit-install` for more info
 
 <br>
+
 ### <a name="guioptions"></a>Guioptions
 
 * `set guioptions-=m` no menu bar
@@ -156,6 +165,7 @@ To match keywords like HTML tags, if-else pairs, etc with `%`, one can install `
 * See also `:h guioptions`
 
 <br>
+
 ### <a name="further-reading"></a>Further Reading
 
 * [Excellent book on Vimscript and customizing Vim](http://learnvimscriptthehardway.stevelosh.com/)

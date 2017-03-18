@@ -27,6 +27,7 @@
 Remember to be in Normal mode, if not press `Esc` key. Press `Esc` again if needed
 
 <br>
+
 ### <a name="cut"></a>Cut
 
 There are various ways to delete text, which can then be pasted elsewhere using paste command
@@ -49,6 +50,7 @@ There are various ways to delete text, which can then be pasted elsewhere using 
 * `S` delete current line and change to Insert mode (same as `cc`)
 
 <br>
+
 ### <a name="copy"></a>Copy
 
 There are various ways to copy text using the **yank** command y
@@ -64,6 +66,7 @@ There are various ways to copy text using the **yank** command y
     * `y↑` can also be used
 
 <br>
+
 ### <a name="paste"></a>Paste
 
 The **paste** command `p` is used after cut or copy operations
@@ -77,6 +80,7 @@ The **paste** command `p` is used after cut or copy operations
 * `3p` paste the copied content three times
 
 <br>
+
 ### <a name="undo"></a>Undo
 
 * `u` undo last edit
@@ -85,11 +89,13 @@ The **paste** command `p` is used after cut or copy operations
     * press `U` again to redo changes
 
 <br>
+
 ### <a name="redo"></a>Redo
 
 * `Ctrl+r` to redo a change undone by `u`
 
 <br>
+
 ### <a name="replace-characters"></a>Replace characters
 
 Often, we just need to change one character (ex: changing i to j)
@@ -105,6 +111,7 @@ To replace mutliple characters with different characters, use uppercase `R`
 The advantage of `r` and `R` commands is that one remains in Normal mode, without the need to switch to Insert mode and back
 
 <br>
+
 ### <a name="repeat"></a>Repeat
 
 * `.` the dot command repeats the last change
@@ -113,12 +120,14 @@ The advantage of `r` and `R` commands is that one remains in Normal mode, withou
     * If the last change was clearing till end of word and inserting some text, dot key will repeat that change
 
 <br>
+
 ### <a name="open-new-line"></a>Open new line
 
 * `o` open new line below the current line and change to Insert mode
 * `O` open new line above the current line and change to Insert mode
 
 <br>
+
 ### <a name="indenting"></a>Indenting
 
 * `>>` indent current line
@@ -127,6 +136,7 @@ The advantage of `r` and `R` commands is that one remains in Normal mode, withou
 * `5<<` unindent current line and four lines below
 
 <br>
+
 ### <a name="arrow-movements"></a>Arrow Movements
 
 The four arrow keys can be used in Vim to move around as in any other text editor. Vim also maps them to four characters in Normal mode (faster typing compared to arrow keys)
@@ -137,6 +147,7 @@ The four arrow keys can be used in Vim to move around as in any other text edito
 * `l` right →
 
 <br>
+
 ### <a name="moving-within-current-line"></a>Moving within current line
 
 * `0` move to beginning of current line - column number 1
@@ -155,6 +166,7 @@ Moving within long lines(spread over multiple screen lines)
 See `:h left-right-motions` for more info
 
 <br>
+
 ### <a name="word-and-character-based-move"></a>Word and Character based move
 
 Difference between word and WORD (definitions quoted from `:h word`)
@@ -186,6 +198,7 @@ Difference between word and WORD (definitions quoted from `:h word`)
 * `,` repeat previous `f,F,t,T` movement in backward direction
 
 <br>
+
 ### <a name="text-objects-based-move"></a>Text Objects based move
 
 * `(` move backward a sentence
@@ -195,6 +208,7 @@ Difference between word and WORD (definitions quoted from `:h word`)
 * `:h object-motions` for more info
 
 <br>
+
 ### <a name="moving-within-current-file"></a>Moving within current file
 
 * `gg` move to first non-blank character of first line of file
@@ -206,6 +220,7 @@ Difference between word and WORD (definitions quoted from `:h word`)
     * It is also possible to match a pair of keywords like HTML tags, if-else, etc with `%` Check `:h matchit-install` for more info
 
 <br>
+
 ### <a name="scrolling"></a>Scrolling
 
 * `Ctrl+d` scroll half page down
@@ -215,6 +230,7 @@ Difference between word and WORD (definitions quoted from `:h word`)
 * `Ctrl+Mouse Scroll` scroll one page forward or backward
 
 <br>
+
 ### <a name="marking-frequently-used-locations"></a>Marking frequently used locations
 
 * `ma` mark location in the file with variable a (use any of the 26 alphabets)
@@ -225,6 +241,7 @@ Difference between word and WORD (definitions quoted from `:h word`)
     * marks can be paired with any command that accept movements like `d,c,y`
 
 <br>
+
 ### <a name="jumping-back-and-forth"></a>Jumping back and forth
 
 This is helpful if you are moving around while editing a large file or moving between different buffers
@@ -240,12 +257,14 @@ Related
 * `gi` to place the cursor at same position where it was left last time in Insert mode
 
 <br>
+
 ### <a name="numbers"></a>Numbers
 
 * `Ctrl+a` increment a number (decimal/octal/hex will be automatically recognized - octal is a number prefixed by `0` and hex by `0x`)
 * `Ctrl+x` decrement a number
 
 <br>
+
 ### <a name="multiple-copy-paste"></a>Multiple copy-paste using " registers
 
 One can use lowercase alphabets `a-z` to save content for future use. And append content to those registers by using corresponding uppercase alphabets `A-Z` at later stage
@@ -256,6 +275,7 @@ One can use lowercase alphabets `a-z` to save content for future use. And append
 * `"cyiw` copy word under cursor to `"c` register
 
 <br>
+
 ### <a name="special-registers"></a>Special registers
 
 Vim has special purpose registers with pre-defined behavior
@@ -278,6 +298,7 @@ Vim has special purpose registers with pre-defined behavior
 * [Advanced Vim registers](https://sanctum.geek.nz/arabesque/advanced-vim-registers/)
 
 <br>
+
 ### <a name="combining-editing-commands-with-movement-commands"></a>Combining editing commands with movement commands
 
 * `dG` delete from current line to end of file
@@ -289,6 +310,7 @@ Vim has special purpose registers with pre-defined behavior
 * `d)` delete upto end of sentence in forward direction
 
 <br>
+
 ### <a name="context-editing"></a>Context editing
 
 We have seen movement using `w,%,f` etc. They require precise positioning to be effective. Vim provides a way to modify commands that accepts movement like `y,c,d` to recognize context. These are `i` and `a` text object selections - easy way to remember their subtle differences is to think of `i` as **inner** and `a` as **around**
@@ -307,6 +329,7 @@ We have seen movement using `w,%,f` etc. They require precise positioning to be 
 For more info `:h text-objects`
 
 <br>
+
 ### <a name="miscellaneous"></a>Miscellaneous
 
 * `gf` open the file pointed by file path under the cursor

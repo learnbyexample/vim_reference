@@ -12,6 +12,7 @@
 * [Further Reading](#further-reading)
 
 <br>
+
 ### <a name="flags-for-search-and-replace"></a>Flags for Search and Replace
 
 * `g` replace all occurrences within line
@@ -26,6 +27,7 @@ Flags can be combined
 For more info, `:h :s_flags`
 
 <br>
+
 ### <a name="pattern-atom"></a>Pattern atom
 
 * `^` start matching from beginning of a line
@@ -40,6 +42,7 @@ For more info, `:h pattern-atoms`
 
 
 <br>
+
 ### <a name="pattern-qualifiers"></a>Pattern Qualifiers
 
 * `*`greedy match preceding character 0 or more times
@@ -63,6 +66,7 @@ For more info, `:h pattern-atoms`
 For more info, `:h pattern-overview`
 
 <br>
+
 ### <a name="character-classes"></a>Character Classes
 
 * `[abcde]` match any of 'a' or 'b' or 'c' or 'd' or 'e' ONE time
@@ -91,6 +95,7 @@ For more info, `:h pattern-overview`
 For more info, `:h /character-classes`
 
 <br>
+
 ### <a name="multiple-and-saving-patterns"></a>Multiple and Saving Patterns
 
 * `\|` allows to specify two or more patterns to be matched
@@ -100,6 +105,7 @@ For more info, `:h /character-classes`
     * `/\(\a\)\1` match repeated alphabets
 
 <br>
+
 ### <a name="word-boundary"></a>Word Boundary
 
 * `\<pattern` Bind the searchpattern to necessarily be starting characters of a word
@@ -110,6 +116,7 @@ For more info, `:h /character-classes`
     * `/\<his\>` matches 'his' and not 'this' or 'history'
 
 <br>
+
 ### <a name="search-pattern-modifiers"></a>Search Pattern modifiers
 
 * `\v` helps to avoid `\` for pattern qualifiers, grouping pattern, etc
@@ -140,6 +147,7 @@ For more info
 * [Excellent examples and other Vim settings on case sensitivity](https://stackoverflow.com/questions/2287440/how-to-do-case-insensitive-search-in-vim)
 
 <br>
+
 ### <a name="changing-case-using-search-and-replace"></a>Changing Case using Search and Replace
 
 These are used in the replacestring section
@@ -158,6 +166,7 @@ Example:
 * [Changing case with regular expressions](https://stackoverflow.com/questions/17440659/capitalize-first-letter-of-each-word-in-a-selection-using-vim)
 
 <br>
+
 ### <a name="delimiters-in-search-and-replace"></a>Delimiters in Search and Replace
 
 One can also use other characters like `#^$` instead of `/`
@@ -165,6 +174,7 @@ One can also use other characters like `#^$` instead of `/`
 * `:% s#/project/adder/#/verilog/project/high_speed_adder/#g` this avoids mess of having to use `\/` for every `/` character
 
 <br>
+
 ### <a name="further-reading"></a>Further Reading
 
 * `:h regular-expression`

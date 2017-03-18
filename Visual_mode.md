@@ -10,6 +10,7 @@ Visual mode is used to edit text by selecting them first
 Selection can either be done using mouse or using visual commands  
 
 <br>
+
 ### <a name="selection"></a>Selection
 
 * `v` start visual selection, use any movement command to complete selection
@@ -20,6 +21,7 @@ Selection can either be done using mouse or using visual commands
     * `Ctrl+v3j2l` to select a 4x3 block, etc
 
 <br>
+
 ### <a name="editing"></a>Editing
 
 * `d` delete the selected text
@@ -34,6 +36,7 @@ Selection can either be done using mouse or using visual commands
 * `:h visual-operators` for more info
 
 <br>
+
 ### <a name="indenting"></a>Indenting
 
 * `>` indent the visually selected lines
@@ -66,6 +69,7 @@ for(;;)
 ```
 
 <br>
+
 ### <a name="changing-case"></a>Changing Case
 
 * `~` invert the case of visually selected text, i.e lowercase becomes uppercase and vice versa
@@ -73,6 +77,7 @@ for(;;)
 * `u` change visually selected text to lowercase
 
 <br>
+
 ### <a name="further-reading"></a>Further Reading
 
 * For more info on Visual mode, `:h visual-mode`

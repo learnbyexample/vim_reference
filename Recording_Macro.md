@@ -7,6 +7,7 @@
 * [Further Reading](#further-reading)
 
 <br>
+
 ### <a name="need-for-macro"></a>Need for Macro
 
 The repeat command can only repeat the last change. It also gets overwritten with every editing command. The `q` command allows user to record any sequence of editing commands to effectively create a user defined command, which can then be applied on other text across files. It can also be prefixed with a number to repeat the command. Powerful indeed!
@@ -22,6 +23,7 @@ Steps
     * `@@` execute last recorded macro
 
 <br>
+
 ### <a name="example-1"></a>Example 1
 
 * `qwceHello<Esc>q`
@@ -62,6 +64,7 @@ Hmm, all this is fine, but how to change only those lines in the file whose star
 * Note: This particular editing can easily be done using `:% s/^Hi/'Hello!'/` This example was used to only show how to use the `q` macro recording
 
 <br>
+
 ### <a name="example-2"></a>Example 2
 
 Suppose, we forgot braces in Perl for single statement control structures
@@ -95,6 +98,7 @@ if($word eq reverse($word))
 ```
 
 <br>
+
 ### <a name="example-3"></a>Example 3
 
 Suppose we need to convert these lines in markdown text
@@ -132,6 +136,7 @@ to table of contents, like this
 * Note: again, this is a demonstration and `s/\v.*"(.*)".*\>(.*)/* [\2](#\1)/` is perhaps better option
 
 <br>
+
 ### <a name="further-reading"></a>Further Reading
 
 * [A Gentle Introduction to Macros](https://medium.com/usevim/vim-101-a-gentle-introduction-to-macros-db6b066e5b38)

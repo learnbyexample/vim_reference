@@ -23,6 +23,7 @@ Now, one might wonder, what is all this need for complicated editing features? W
 A simple and short answer is: to reduce repititive manual task and the time taken to type a computer code. Faster editing probably makes sense. Reduce typing time? seems absurd. But when you are in the middle of coding a large program, thinking about complicated logic, it helps to have minimal typing distraction
 
 <br>
+
 ### <a name="ice-breaker"></a>Ice Breaker
 
 Open a terminal and try these steps:
@@ -41,6 +42,7 @@ Phew, what a complicated procedure to write a simple line of text, isn't it? Thi
 * Material presented here is based on `gvim`, which has a few subtle differences from `vim` - see this [stackoverflow](https://stackoverflow.com/questions/22517896/linux-gvim-vs-vim) thread for details
 
 <br>
+
 ### <a name="vim-help-and-resources"></a>Vim help and resources
 
 * `gvimtutor` shell command. Opens a tutor file and has various lessons to get started with Vim
@@ -56,6 +58,7 @@ Phew, what a complicated procedure to write a simple line of text, isn't it? Thi
 * [Vim curated resources](https://github.com/learnbyexample/scripting_course/blob/master/Vim_curated_resources.md)
 
 <br>
+
 ### <a name="opening-vim"></a>Opening Vim
 
 * `gvim` new document when filename is not specified
@@ -73,6 +76,7 @@ Phew, what a complicated procedure to write a simple line of text, isn't it? Thi
 * `gvim -h` for complete list of options
 
 <br>
+
 ### <a name="modes-of-operation"></a>Modes of Operation
 
 Vim is best described as a modal editor. Here, we'll mainly see four modes
@@ -85,6 +89,7 @@ Vim is best described as a modal editor. Here, we'll mainly see four modes
 For complete list of modes, see `:h vim-modes-intro` and `:h mode-switching`
 
 <br>
+
 ### <a name="insert-mode"></a>Insert mode
 
 This is the mode where required text is typed. Usual editing options available are Delete, Backspace and Arrow keys. Some smart editing short-cuts:
@@ -99,6 +104,7 @@ This is the mode where required text is typed. Usual editing options available a
 Pressing `Esc` key changes the mode back to Normal mode
 
 <br>
+
 ### <a name="normal-mode"></a>Normal mode
 
 This is the default mode when Vim is opened. This mode is used to run commands for editing operations like copy, delete, paste, recording, moving around file, etc. It is also referred to as Command mode
@@ -125,6 +131,7 @@ Below commands are commonly used to change modes from Normal mode:
 * `?` to start searching in backward direction
 
 <br>
+
 ### <a name="visual-mode"></a>Visual mode
 
 Visual mode is used to edit text by selecting them first  
@@ -137,6 +144,7 @@ Selection can either be done using mouse or using visual commands
 Pressing `Esc` key changes the mode back to Normal mode
 
 <br>
+
 ### <a name="command-line-mode"></a>Command Line mode
 
 * After `:` or `/` or `?` is pressed in Normal mode, the prompt appears in last line of Vim window
@@ -146,6 +154,7 @@ Pressing `Esc` key changes the mode back to Normal mode
 Press `Esc` key to ignore whatever is typed and return to Normal mode
 
 <br>
+
 ### <a name="identifying-current-mode-in-gvim"></a>Identifying current mode in gvim
 
 * In Insert mode, the cursor is a blinking `|` cursor, also `-- INSERT --` can be seen on left hand side of the Command Line

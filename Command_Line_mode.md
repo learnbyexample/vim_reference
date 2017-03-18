@@ -14,6 +14,7 @@ Any operation is completed by pressing `Enter` key after which the mode changes 
 Press `Esc` key to ignore whatever is typed and return to Normal mode
 
 <br>
+
 ### <a name="saving-changes"></a>Saving changes
 
 * `:w` save changes
@@ -22,6 +23,7 @@ Press `Esc` key to ignore whatever is typed and return to Normal mode
 * `:wa` save changes made to all the files opened
 
 <br>
+
 ### <a name="exit-vim"></a>Exit Vim
 
 * `:q` quit the current file (if other tabs are open, they will remain) - if unsaved changes are there, you will get an error message
@@ -29,12 +31,14 @@ Press `Esc` key to ignore whatever is typed and return to Normal mode
 * `:q!` quit and ignore unsaved changes
 
 <br>
+
 ### <a name="combining-save-and-quit"></a>Combining Save and Quit
 
 * `:wq` save changes and quit
 * `:wq!` save changes even if file is read-only and quit
 
 <br>
+
 ### <a name="editing-buffers"></a>Editing buffers
 
 Multiple files can be opened in Vim within same tab and/or different tab
@@ -85,6 +89,7 @@ If multiple buffers are open and you want to apply common editing across all of 
 * [When to use Buffers and when to use Tabs](https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/)
 
 <br>
+
 ### <a name="search"></a>Search
 
 * `/searchpattern` search the given pattern in forward direction
@@ -111,6 +116,7 @@ Highlight settings
 * `:noh` clear highlighted patterns, doesn't affect highlight settings
 
 <br>
+
 ### <a name="search-and-replace"></a>Search and Replace
 
 General syntax is `:range s/searchpattern/replacestring/flags`  
@@ -129,6 +135,7 @@ Space between `range` and `s` is optional and may be used for clarity
 * More on substitute and Regular Expressions is covered in a later chapter. `:h :substitute` and `:h range` for more info
 
 <br>
+
 ### <a name="editing-lines-filtered-by-pattern"></a>Editing lines filtered by pattern
 
 The `g` command, short for `global` allows to edit lines that are first filtered based on a searchpattern
@@ -143,6 +150,7 @@ For more info, see `:h :g`
 Also, check out `:h :t` and `:h :m` to copy/move the filtered lines using `:g` and `:h ex-cmd-index` for complete list of commands to use with `:g`
 
 <br>
+
 ### <a name="shell-commands"></a>Shell Commands
 
 One can also use shell commands within Vim
@@ -160,6 +168,7 @@ One can also use shell commands within Vim
 * `:h :!`, `:h :sh` and `:h :r` for more info
 
 <br>
+
 ### <a name="miscellaneous"></a>Miscellaneous
 
 * `:set number` prefix line numbers (it is a visual guideline, won't modify text)
