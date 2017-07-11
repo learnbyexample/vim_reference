@@ -1,3 +1,7 @@
+Use [![Join the chat at https://gitter.im/learnbyexample/scripting_course](https://badges.gitter.im/learnbyexample/scripting_course.svg)](https://gitter.im/learnbyexample/scripting_course) if you need help, have suggestions, etc
+
+<br>
+
 # <a name="vim-reference"></a>Vim Reference
 
 Vim reference guide for beginner to intermediate users
