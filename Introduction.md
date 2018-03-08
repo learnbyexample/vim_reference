@@ -75,6 +75,8 @@ Phew, what a complicated procedure to write a simple line of text, isn't it? Thi
 * `gvim -c ':%s/search/replace/g' script.pl` open script.pl and execute the given Command Line mode command
 * `gvim -h` for complete list of options
 
+See also [stackoverflow - using vim to interactively edit lines filtered using grep](https://stackoverflow.com/questions/49152029/grep-for-string-and-open-at-the-corresponding-line)
+
 <br>
 
 ### <a name="modes-of-operation"></a>Modes of Operation
