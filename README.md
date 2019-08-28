@@ -1,17 +1,9 @@
-<p align="center">
-    <a href="https://gitter.im/learnbyexample/scripting_course"><img src="https://badges.gitter.im/learnbyexample/scripting_course.svg" width="100px" height="30px" /></a>
-    <a href="https://www.patreon.com/learnbyexample"><img src="./images/become_a_patron_button.png" width="150px" height="30px" /></a>
-    <a href="https://liberapay.com/learnbyexample/donate"><img src="https://liberapay.com/assets/widgets/donate.svg" width="100px" height="30px" /></a>
-</p>
-
-<br>
-
 # <a name="vim-reference"></a>Vim Reference
 
 Vim reference guide for beginner to intermediate users
 
 * [Vim curated resources](https://github.com/learnbyexample/scripting_course/blob/master/Vim_curated_resources.md) for more complete resources list, including tutorials for beginners
-* For more Linux resources, visit [scripting course](https://github.com/learnbyexample/scripting_course)
+* For more related resources, visit [scripting course](https://github.com/learnbyexample/scripting_course) and my programming blog https://learnbyexample.github.io
 
 <br>
 
@@ -33,7 +25,6 @@ Vim reference guide for beginner to intermediate users
     * Even for pull requests, open an issue for discussion before submitting PRs
     * or [gitter group chat](https://gitter.im/learnbyexample/scripting_course) for discussion as well as for help/mentorship
 * Share the repo with friends/colleagues, on social media, etc to help reach other learners
-* Contribute by donating on [patreon](https://www.patreon.com/learnbyexample) or [liberapay](https://liberapay.com/learnbyexample/donate)
 * In case you need to reach me, use [gitter private chat](https://gitter.im/learnbyexample)
     * or mail me at `echo 'bGVhcm5ieWV4YW1wbGUubmV0QGdtYWlsLmNvbQo=' | base64 --decode`
 
@@ -49,3 +40,4 @@ Vim reference guide for beginner to intermediate users
 # <a name="license"></a>License
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
