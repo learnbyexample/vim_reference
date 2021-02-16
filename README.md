@@ -1,6 +1,6 @@
 # <a name="vim-reference"></a>Vim Reference
 
-Vim reference guide for beginner to intermediate users
+Vim reference guide (version 7.4) for beginner to intermediate users
 
 * [Vim curated resources](https://github.com/learnbyexample/scripting_course/blob/master/Vim_curated_resources.md) for more complete resources list, including tutorials for beginners
 * For more related resources, visit [scripting course](https://github.com/learnbyexample/scripting_course) and my programming blog https://learnbyexample.github.io
