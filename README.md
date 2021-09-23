@@ -1,41 +1,47 @@
 # <a name="vim-reference"></a>Vim Reference
 
-Vim reference guide (version 7.4) for beginner to intermediate users
+⚠️ ⚠️ ⚠️ This is a **work-in-progress** reference guide for the Vim text editor, suitable for beginner to intermediate level users. The content here was originally written for `version 7.4` and I will be updating the material for `version 8+`.
 
-* [Vim curated resources](https://github.com/learnbyexample/scripting_course/blob/master/Vim_curated_resources.md) for more complete resources list, including tutorials for beginners
-* For more related resources, visit [scripting course](https://github.com/learnbyexample/scripting_course) and my programming blog https://learnbyexample.github.io
+ℹ️ See also my [curated list on Vim](https://learnbyexample.github.io/curated_resources/vim.html) for beginner to advanced level resources.
 
 <br>
 
-# <a name="chapters"></a>Chapters
+# E-book
 
-* [Introduction](./Introduction.md)
-* [Normal mode](./Normal_mode.md)
-* [Command Line mode](./Command_Line_mode.md)
-* [Visual mode](./Visual_mode.md)
-* [Regular Expressions](./Regular_Expressions.md)
-* [Recording Macro](./Recording_Macro.md)
-* [Customizing vim](./Customizing_vim.md)
+TODO: pdf/epub versions
+
+For web version of the book, visit https://learnbyexample.github.io/vim_reference/
+
+See https://learnbyexample.github.io/books/ for list of other books
 
 <br>
 
 # <a name="contributing"></a>Contributing
 
-* Please open an issue for typos/bugs/suggestions/etc
-    * **Please open an issue for discussion before submitting PRs**
-* Share the repo with friends/colleagues, on social media, etc to help reach other learners
-* In case you need to reach me, mail me at `echo 'bGVhcm5ieWV4YW1wbGUubmV0QGdtYWlsLmNvbQo=' | base64 --decode` or send a DM via [twitter](https://twitter.com/learn_byexample)
+[Open an issue](https://github.com/learnbyexample/vim_reference/issues) if you spot any typo/errors.
+
+⚠️ ⚠️ Please DO NOT submit pull requests. Main reason being any modification requires changes in multiple places.
+
+I'd also highly appreciate your feedback about the book.
+
+Twitter: https://twitter.com/learn_byexample
 
 <br>
 
-# <a name="ebook"></a>ebook
+## Acknowledgements
 
-* Read as ebook on [gitbook](https://learnbyexample.gitbooks.io/vim-reference/content/index.html)
-* All `legacy.gitbook.com` links are now automatically redirected to `gitbook.com`, so there's no longer an option to download ebooks for offline reading
+* [/r/vim/](https://www.reddit.com/r/vim) and [vi.stackexchange](https://vi.stackexchange.com/) — helpful forums
+* [Warning](https://commons.wikimedia.org/wiki/File:Warning_icon.svg) and [Info](https://commons.wikimedia.org/wiki/File:Info_icon_002.svg) icons by [Amada44](https://commons.wikimedia.org/wiki/User:Amada44) under public domain
+* [pngquant](https://pngquant.org/) and [svgcleaner](https://github.com/RazrFalcon/svgcleaner) for optimizing images
+* [Inkscape](https://inkscape.org/) for favicon
+* [mdBook](https://github.com/rust-lang/mdBook) — for web version of the book
+    * [mdBook-pagetoc](https://github.com/JorelAli/mdBook-pagetoc) — for adding table of contents for each page
+    * [minify-html](https://github.com/wilsonzlin/minify-html) — for minifying html files
 
 <br>
 
 # <a name="license"></a>License
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+The book is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+The code snippets are licensed under MIT, see [LICENSE](./LICENSE) file
