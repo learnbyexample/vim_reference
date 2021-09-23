@@ -1,4 +1,4 @@
-# <a name="vim-reference"></a>Vim Reference
+# Vim Reference
 
 ⚠️ ⚠️ ⚠️ This is a **work-in-progress** reference guide for the Vim text editor, suitable for beginner to intermediate level users. The content here was originally written for `version 7.4` and I will be updating the material for `version 8+`.
 
@@ -16,7 +16,7 @@ See https://learnbyexample.github.io/books/ for list of other books
 
 <br>
 
-# <a name="contributing"></a>Contributing
+# Contributing
 
 [Open an issue](https://github.com/learnbyexample/vim_reference/issues) if you spot any typo/errors.
 
@@ -28,7 +28,7 @@ Twitter: https://twitter.com/learn_byexample
 
 <br>
 
-## Acknowledgements
+# Acknowledgements
 
 * [/r/vim/](https://www.reddit.com/r/vim) and [vi.stackexchange](https://vi.stackexchange.com/) — helpful forums
 * [Warning](https://commons.wikimedia.org/wiki/File:Warning_icon.svg) and [Info](https://commons.wikimedia.org/wiki/File:Info_icon_002.svg) icons by [Amada44](https://commons.wikimedia.org/wiki/User:Amada44) under public domain
@@ -40,7 +40,7 @@ Twitter: https://twitter.com/learn_byexample
 
 <br>
 
-# <a name="license"></a>License
+# License
 
 The book is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
