@@ -1,0 +1,77 @@
+<!DOCTYPE HTML><html lang=en class="sidebar-visible no-js rust"><head><meta charset=UTF-8><title>Visual mode - Vim Reference Guide</title><meta content="text/html; charset=utf-8"http-equiv=Content-Type><meta name=description content="Vim Reference Guide"><meta name=viewport content="width=device-width, initial-scale=1"><meta name=theme-color content=#ffffff><link rel=icon href=favicon.svg><link rel="shortcut icon"href=favicon.png><link rel=stylesheet href=css/variables.css><link rel=stylesheet href=css/general.css><link rel=stylesheet href=css/chrome.css><link rel=stylesheet href=FontAwesome/css/font-awesome.css><link rel=stylesheet href=fonts/fonts.css><link rel=stylesheet href=highlight.css><link rel=stylesheet href=tomorrow-night.css><link rel=stylesheet href=ayu-highlight.css><link rel=stylesheet href=style.css><body><script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script><script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script><script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script><script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script><nav id=sidebar class=sidebar aria-label="Table of contents"><div class=sidebar-scrollbox><ol class=chapter><li class="chapter-item expanded affix"><a href=preface.html>Preface</a><li class="chapter-item expanded"><a href=Introduction.html><strong aria-hidden=true>1.</strong> Introduction</a><li class="chapter-item expanded"><a href=Normal-mode.html><strong aria-hidden=true>2.</strong> Normal mode</a><li class="chapter-item expanded"><a href=Command-line-mode.html><strong aria-hidden=true>3.</strong> Command-line mode</a><li class="chapter-item expanded"><a href=Visual-mode.html class=active><strong aria-hidden=true>4.</strong> Visual mode</a><li class="chapter-item expanded"><a href=Regular-Expressions.html><strong aria-hidden=true>5.</strong> Regular Expressions</a><li class="chapter-item expanded"><a href=Macro.html><strong aria-hidden=true>6.</strong> Macro</a><li class="chapter-item expanded"><a href=Customizing-Vim.html><strong aria-hidden=true>7.</strong> Customizing Vim</a></li><br><hr><li class="chapter-item expanded"><i id=git-repository-button class="fa fa-github"></i><a href=https://github.com/learnbyexample/vim_reference>   Source code</a><li class="chapter-item expanded"><i id=home-button class="fa fa-home"></i><a href=https://learnbyexample.github.io/>   My Blog</a><li class="chapter-item expanded"><i id=book-button class="fa fa-book"></i><a href=https://learnbyexample.github.io/books/>   My Books</a><li class="chapter-item expanded"><i id=mail-button class="fa fa-envelope"></i><a href=https://learnbyexample.gumroad.com/l/learnbyexample-weekly>   learnbyexample weekly</a></ol></div><div id=sidebar-resize-handle class=sidebar-resize-handle></div></nav><div id=page-wrapper class=page-wrapper><div class=page><div id=menu-bar-hover-placeholder></div><div id=menu-bar class="menu-bar sticky bordered"><div class=left-buttons><button id=sidebar-toggle class=icon-button type=button title="Toggle Table of Contents"aria-label="Toggle Table of Contents"aria-controls=sidebar><i class="fa fa-bars"></i></button><button id=theme-toggle class=icon-button type=button title="Change theme"aria-label="Change theme"aria-haspopup=true aria-expanded=false aria-controls=theme-list><i class="fa fa-paint-brush"></i></button><ul id=theme-list class=theme-popup aria-label=Themes role=menu><li role=none><button role=menuitem class=theme id=light>Light</button><li role=none><button role=menuitem class=theme id=rust>Rust (default)</button><li role=none><button role=menuitem class=theme id=coal>Coal</button><li role=none><button role=menuitem class=theme id=navy>Navy</button><li role=none><button role=menuitem class=theme id=ayu>Ayu</button></ul><button id=search-toggle class=icon-button type=button title="Search. (Shortkey: s)"aria-label="Toggle Searchbar"aria-expanded=false aria-keyshortcuts=S aria-controls=searchbar><i class="fa fa-search"></i></button></div><h1 class=menu-title>Vim Reference Guide</h1><div class=right-buttons><a href=https://learnbyexample.github.io title=Blog aria-label=Blog> <i id=home-button class="fa fa-home"></i> </a><a href=https://github.com/learnbyexample/vim_reference title="Git repository"aria-label="Git repository"> <i id=git-repository-button class="fa fa-github"></i> </a></div></div><div id=search-wrapper class=hidden><form id=searchbar-outer class=searchbar-outer><input type=search id=searchbar name=searchbar placeholder="Search this book ..."aria-controls=searchresults-outer aria-describedby=searchresults-header></form><div id=searchresults-outer class="searchresults-outer hidden"><div id=searchresults-header class=searchresults-header></div><ul id=searchresults></ul></div></div><script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script><div id=content class=content><main><div class=sidetoc><nav class=pagetoc></nav></div><h1 id=visual-mode><a class=header href=#visual-mode>Visual mode</a></h1><p>Visual mode allows you to perform editing tasks on selected portions of text. There are various visual commands to select the text of interest. If enabled, you can also use your mouse to select the desired portions.<h2 id=selection><a class=header href=#selection>Selection</a></h2><ul><li><code>v</code> visually select the current character, use any movement command to extend the selection <ul><li>for example: <code>ve</code> selects till the end of a word, <code>vip</code> selects a paragraph and so on</ul><li><code>V</code> visually select the current line, you can optionally extend this using movement commands <ul><li>for example: <code>Vgg</code> selects the current line and then extends to the start of the file</ul><li><code>Ctrl+v</code> visually select column(s) <ul><li>for example: <code>Ctrl+v3j2l</code> selects a 4x3 block<li>you can also select using the mouse and then press <code>Ctrl+v</code></ul></ul><blockquote><p><img src=./images/info.svg alt=info> See <a href=https://vimhelp.org/visual.txt.html>:h visual-mode</a> for more details.</blockquote><h2 id=editing><a class=header href=#editing>Editing</a></h2><ul><li><code>d</code> delete the selected text<li><code>c</code> clear the selected text and change to Insert mode <ul><li>for visually selected column, you can type any text and press <code>Esc</code> key to replicate that text across all the visually selected lines</ul><li><code>I</code> after selecting columns with <code>Ctrl+v</code>, press <code>I</code>, type text and press <code>Esc</code> key to replicate that text across all lines to the left of the selection<li><code>A</code> after selecting columns with <code>Ctrl+v</code>, press <code>A</code>, type text and press <code>Esc</code> key to replicate that text across all lines to the right of the selection<li><code>ra</code> replace every character of the selected text with <code>a</code><li><code>:</code> perform Command-line mode editing commands like <code>g</code>, <code>s</code>, <code>!</code>, <code>normal</code>, etc on the selected text<li><code>J</code> join the selected lines with a space character in between<li><code>gJ</code> join the selected lines without any character in between</ul><blockquote><p><img src=./images/info.svg alt=info> See <a href=https://vimhelp.org/visual.txt.html#visual-operators>:h visual-operators</a> for more details.</blockquote><h2 id=indenting><a class=header href=#indenting>Indenting</a></h2><ul><li><code>></code> indent the visually selected lines once<li><code>3></code> indent the visually selected lines three times<li><code><</code> unindent the visually selected lines once<li><code>=</code> indent code, takes care of nesting too</ul><p>Consider the following unindented code:<pre><code class=language-c>for(i=1; i&LT5; i++)
+{
+for(j=i; j&LT10; j++)
+{
+statements
+}
+statements
+}
+</code></pre><p>Here's the result after applying <code>vip=</code><pre><code class=language-c>for(i=1; i&LT5; i++)
+{
+    for(j=i; j&LT10; j++)
+    {
+        statements
+    }
+    statements
+}
+</code></pre><h2 id=changing-case><a class=header href=#changing-case>Changing Case</a></h2><ul><li><code>~</code> invert the case of the visually selected text (i.e. lowercase becomes UPPERCASE and vice versa)<li><code>U</code> change the visually selected text to UPPERCASE<li><code>u</code> change the visually selected text to lowercase</ul><h2 id=numbers><a class=header href=#numbers>Numbers</a></h2><ul><li><code>g</code> followed by <code>Ctrl+a</code> increment by <code>1</code> for the first line, by <code>2</code> for the second line, by <code>3</code> for the third line and so on<li><code>g</code> followed by <code>Ctrl+x</code> decrement by <code>1</code> for the first line, by <code>2</code> for the second line, by <code>3</code> for the third line and so on</ul><blockquote><p><img src=./images/info.svg alt=info> The visual selection should cover the numeric portion you wish you increment or decrement. If there are multiple numbers in a visually selected line, only the first number will be affected.</blockquote><p>Example for <code>gCtrl+a</code>:<pre><code class=language-python># before
+item[0]
+item[0]
+item[0]
+
+# after
+item[1]
+item[2]
+item[3]
+</code></pre><p>Example for <code>gCtrl+x</code>:<pre><code class=language-python># before
+item[12]
+item[16]
+item[22]
+
+# after
+item[11]
+item[14]
+item[19]
+</code></pre></main><nav class=nav-wrapper aria-label="Page navigation"><a rel=prev href=Command-line-mode.html class="mobile-nav-chapters previous"title="Previous chapter"aria-label="Previous chapter"aria-keyshortcuts=Left> <i class="fa fa-angle-left"></i> </a><a rel=next href=Regular-Expressions.html class="mobile-nav-chapters next"title="Next chapter"aria-label="Next chapter"aria-keyshortcuts=Right> <i class="fa fa-angle-right"></i> </a><div style="clear: both"></div></nav></div></div><nav class=nav-wide-wrapper aria-label="Page navigation"><a rel=prev href=Command-line-mode.html class="nav-chapters previous"title="Previous chapter"aria-label="Previous chapter"aria-keyshortcuts=Left> <i class="fa fa-angle-left"></i> </a><a rel=next href=Regular-Expressions.html class="nav-chapters next"title="Next chapter"aria-label="Next chapter"aria-keyshortcuts=Right> <i class="fa fa-angle-right"></i> </a></nav></div><script>
+            window.playground_copyable = true;
+        </script><script src=elasticlunr.min.js charset=utf-8></script><script src=mark.min.js charset=utf-8></script><script src=searcher.js charset=utf-8></script><script src=clipboard.min.js charset=utf-8></script><script src=highlight.js charset=utf-8></script><script src=book.js charset=utf-8></script><script src=sidebar.js></script>
