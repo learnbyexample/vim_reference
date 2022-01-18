@@ -2,6 +2,7 @@ h1 {
     color: #ff6600;
 }
 
+/*https://developer.mozilla.org/en-US/docs/Web/HTML/Element/kbd*/
 kbd {
     background-color: #eee;
     border-radius: 3px;
