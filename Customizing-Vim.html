@@ -45,7 +45,7 @@ use warnings;
 </code></pre><li><p><kbd>ia py #!/usr/bin/env python3</kbd> expand <code>py</code> to <code>#!/usr/bin/env python3</code></p> <ul><li>this might cause issues if you need <code>py</code> literally (for example, <code>script.py</code>)<li>you can use something like <code>[p</code> or <code>@p</code> instead</ul><li><p><kbd>ia teh the</kbd> automatically correct <code>teh</code> typo to <code>the</code><li><p><kbd>ia @a always @()&LTCR>begin&LTCR>end&LTEsc>2k$</kbd> expand <code>@a</code> to the text as shown in the code snippet below</p> <ul><li>this one works best when you type <code>@a</code> followed by <kbd>Esc</kbd> key to place the cursor at the end of the first line</ul> <pre><code class=language-verilog>always @()
 begin
 end
-</code></pre><li><p><kbd>:abbreviate</kbd> or <kbd>:ab</kbd> list all abbreviations</ul><h2 id=autocmd><a class=header href=#autocmd>autocmd</a></h2><p><code>autocmd</code> helps you to execute commands based on specific events for specific filetypes. Here's an example for Python files:<pre><code class=language-vimL>augroup py
+</code></pre><li><p><kbd>:abbreviate</kbd> or <kbd>:ab</kbd> list all abbreviations</ul><blockquote><p><img src=./images/info.svg alt=info> See <a href=https://vimhelp.org/usr_24.txt.html#24.7>:h 24.7</a> for more details about using abbreviations.</blockquote><h2 id=autocmd><a class=header href=#autocmd>autocmd</a></h2><p><code>autocmd</code> helps you to execute commands based on specific events for specific filetypes. Here's an example for Python files:<pre><code class=language-vimL>augroup py
     autocmd!
 
     " add Python shebang for a new buffer with .py extension
