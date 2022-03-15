@@ -5,8 +5,9 @@ To celebrate this book's release, **Vim Reference Guide** is FREE to download ti
 * [Gumroad](https://learnbyexample.gumroad.com/l/vim_reference_guide)
 * [Leanpub](https://leanpub.com/vim_reference_guide)
 
-Three of my ebook bundles are on sale as well till 31-Mar-2022:
+Some of my ebooks and bundles are on sale as well till 31-Mar-2022:
 
+* [JavaScript RegExp](https://learnbyexample.gumroad.com/l/js_regexp/vim_release) is FREE
 * [All books bundle](https://learnbyexample.gumroad.com/l/all-books/vim_release) is $8 (normal price $24)
     * all my 12 programming ebooks
 * [Learn by example Python bundle](https://learnbyexample.gumroad.com/l/python-bundle/vim_release) is $3 (normal price $12)
@@ -18,13 +19,15 @@ Three of my ebook bundles are on sale as well till 31-Mar-2022:
 
 # Vim Reference Guide
 
-**Vim Reference Guide** is intended as a concise learning resource for beginner to intermediate level Vim users. It has more in common with cheatsheets than a typical text book. Topics like Regular Expressions and Macros have more detailed explanations and examples due to their complexity.
+**Vim Reference Guide** is intended as a concise learning resource for beginner to intermediate level Vim users. It has more in common with cheatsheets than a typical text book. Topics like Regular Expressions and Macros have more detailed explanations and examples due to their complexity. Visit https://youtu.be/SyQe6zzOGZ0 for a short video about the book.
 
 <p align="center"> <img src="./images/vim_reference_guide.png" width="320px" height="400px" /> </p>
 
 See [Version_changes.md](./Version_changes.md) to keep track of changes made to the book.
 
-ℹ️ See also my [curated list on Vim](https://learnbyexample.github.io/curated_resources/vim.html) for beginner to advanced level learning resources.
+📹 I'm currently [creating short 1-3 minute videos](https://www.youtube.com/playlist?list=PLTv2U3HnAL4NN2tK-59ZiNBm-o64-Yvos) highlighting handy Vim features.
+
+See also my [curated list on Vim](https://learnbyexample.github.io/curated_resources/vim.html) for beginner to advanced level learning resources.
 
 <br>
 
