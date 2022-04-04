@@ -1,19 +1,3 @@
-# Release offers
-
-To celebrate this book's release, **Vim Reference Guide** is FREE to download till 31-Mar-2022. You can still pay if you wish ;)
-
-* [Gumroad](https://learnbyexample.gumroad.com/l/vim_reference_guide)
-* [Leanpub](https://leanpub.com/vim_reference_guide)
-
-Some of my ebooks and bundles are on sale as well till 31-Mar-2022:
-
-* [JavaScript RegExp](https://learnbyexample.gumroad.com/l/js_regexp/vim_release) is FREE
-* [All books bundle](https://learnbyexample.gumroad.com/l/all-books/vim_release) is $8 (normal price $24) — all my 12 programming ebooks
-* [Learn by example Python bundle](https://learnbyexample.gumroad.com/l/python-bundle/vim_release) is $3 (normal price $12) — Python intro, regex and projects
-* [Magical one-liners bundle](https://learnbyexample.gumroad.com/l/oneliners/vim_release) is $3 (normal price $12) — grep, sed, awk, perl and ruby one-liners
-
-<br>
-
 # Vim Reference Guide
 
 **Vim Reference Guide** is intended as a concise learning resource for beginner to intermediate level Vim users. It has more in common with cheatsheets than a typical text book. Topics like Regular Expressions and Macros have more detailed explanations and examples due to their complexity. Visit https://youtu.be/SyQe6zzOGZ0 for a short video about the book.
