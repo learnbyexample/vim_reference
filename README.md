@@ -41,6 +41,10 @@ Got several suggestions and feedback when [my submission about this book](https:
 >
 >I learnt regular expression by reading your books, thank you for the great work. — LamJH
 
+A comment from another [Hacker News thread](https://news.ycombinator.com/item?id=31931804):
+
+>I stumbled upon your vi post a few days ago, really like the style. Keep it up!
+
 <br>
 
 # Feedback and Contributing
