@@ -14,11 +14,13 @@ See also my [curated list on Vim](https://learnbyexample.github.io/curated_resou
 
 # E-book
 
-You can purchase the book using these links:
-
-* https://learnbyexample.gumroad.com/l/vim_reference_guide
-* https://leanpub.com/vim_reference_guide
-* You can also get the book as part of **All books bundle** from https://learnbyexample.gumroad.com/l/all-books
+* You can purchase the book using these links:
+   * https://learnbyexample.gumroad.com/l/vim_reference_guide
+   * https://leanpub.com/vim_reference_guide
+* You can also get the book as part of these bundles:
+   * **Awesome Regex** bundle from https://leanpub.com/b/regex or https://learnbyexample.gumroad.com/l/regex
+   * **All books bundle** from https://learnbyexample.gumroad.com/l/all-books
+        * Includes all my programming books
 * See https://learnbyexample.github.io/books/ for list of other books
 
 For a preview of the book, see [sample chapters](https://github.com/learnbyexample/vim_reference/blob/master/sample_chapters/vim_reference_guide_sample.pdf)
