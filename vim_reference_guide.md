@@ -2,21 +2,23 @@
 
 **Vim Reference Guide** is intended as a concise learning resource for beginner to intermediate level Vim users. It has more in common with cheatsheets than a typical text book. Most features are presented using a sample usage. Topics like Regular Expressions and Macros have more detailed explanations and examples due to their complexity.
 
-The features covered in this guide are shaped and limited by my own experiences since 2007. Fourteen years would seem a long time to have already become an expert, but I'm not there yet (nor do I have a pressing need for such expertise). The [earlier version of this guide](https://github.com/learnbyexample/vim_reference/tree/62eb9b8407904b26f07972a5a92b27d5e7eeaeb7) was written five years back and I still took more than three months to get it fit for publication. A large portion of that time was spent correcting my understanding of Vim commands, going through user and reference manuals, getting good at using built-in help, learning more features and so on.
+The features covered in this guide are shaped and limited by my own experiences since 2007. You might expect me to have already become an expert, but I'm not there yet (nor do I have a pressing need for such expertise). The [earlier version of this guide](https://github.com/learnbyexample/vim_reference/tree/62eb9b8407904b26f07972a5a92b27d5e7eeaeb7) was written in 2017 and I did an extensive rework to get it fit for publication. A large portion of that time was spent correcting my understanding of Vim commands, going through user and reference manuals, getting good at using the built-in help, learning new features and so on.
 
 ## Prerequisites
 
 I do give a brief introduction to get started with using Vim, but having prior experience would be ideal before using this resource. As a minimum requirement, you should be able to use `vimtutor` on your own.
 
+You are also expected to get comfortable with reading manuals, searching online, visiting external links provided for further reading, tinkering with the illustrated examples, asking for help when you are stuck and so on. In other words, be proactive and curious instead of just consuming the content passively.
+
 >![info](./images/info.svg) See my [Vim curated list](https://learnbyexample.github.io/curated_resources/vim.html) for links to tutorials, books, interactive resources, cheatsheets, tips, tricks, forums and so on.
 
 ## Conventions
 
-* This guide is based on **Vim version 8.1** and some instructions assume Unix/Linux like operating system. Where possible, details and resources are mentioned for other platforms.
+* This guide is based on **Vim version 9.1** and some instructions assume Unix/Linux like operating systems. Where possible, details and resources are mentioned for other platforms.
 * I prefer using **GVim**, so you might find some differences if you are using **Vim**.
 * Built-in help command examples are also linked to an online version. For example, clicking [:h usr_toc.txt](https://vimhelp.org/usr_toc.txt.html) will take you to table of contents for Vim User Manual. `:h usr_toc.txt` is also a command that you can use from within Vim.
 * External links are provided throughout the book for exploring some topics in more depth.
-* [vim_reference repo](https://github.com/learnbyexample/vim_reference) has markdown source and other details related to the book. If you are not familiar with `git` command, click the **Code** button on the webpage to get the files.
+* My [vim_reference repo](https://github.com/learnbyexample/vim_reference) has markdown source and other details related to the book. If you are not familiar with the `git` command, click the **Code** button on the webpage to get the files.
 
 ## How to use this guide
 
@@ -29,22 +31,23 @@ I do give a brief introduction to get started with using Vim, but having prior e
 ## Acknowledgements
 
 * [Vim help files](https://vimhelp.org/) — user and reference manuals
-* [/r/vim/](https://www.reddit.com/r/vim) and [vi.stackexchange](https://vi.stackexchange.com/) — helpful forums
+* [/r/vim/](https://old.reddit.com/r/vim) and [vi.stackexchange](https://vi.stackexchange.com/) — helpful forums
+* [tex.stackexchange](https://tex.stackexchange.com/) — for help on [pandoc](https://github.com/jgm/pandoc/) and `tex` related questions
 * [canva](https://www.canva.com/) — cover image
 * [Warning](https://commons.wikimedia.org/wiki/File:Warning_icon.svg) and [Info](https://commons.wikimedia.org/wiki/File:Info_icon_002.svg) icons by [Amada44](https://commons.wikimedia.org/wiki/User:Amada44) under public domain
-* [oxipng](https://github.com/shssoichiro/oxipng), [pngquant](https://pngquant.org/) and [svgcleaner](https://github.com/RazrFalcon/svgcleaner) for optimizing images
-* [Rodrigo Girão Serrão](https://mathspp.com/) for feedback and suggestions
-* [Andy](https://twitter.com/andylondon) for cover image suggestions
+* [oxipng](https://github.com/shssoichiro/oxipng), [pngquant](https://pngquant.org/) and [svgcleaner](https://github.com/RazrFalcon/svgcleaner) — for optimizing images
+* [Rodrigo Girão Serrão](https://mathspp.com/) — for feedback and suggestions
+* [Andy](https://twitter.com/andylondon) — for cover image suggestions
 
 ## Feedback and Errata
 
-I would highly appreciate if you'd let me know how you felt about this book, it would help to improve this book as well as my future attempts. Also, please do let me know if you spot any error or typo.
+I would highly appreciate it if you'd let me know how you felt about this book. It could be anything from a simple thank you, pointing out a typo, mistakes in code snippets, which aspects of the book worked for you (or didn't!) and so on. Reader feedback is essential and especially so for self-published authors.
 
-Issue Manager: [https://github.com/learnbyexample/vim_reference/issues](https://github.com/learnbyexample/vim_reference/issues)
+You can reach me via:
 
-E-mail: learnbyexample.net@gmail.com
-
-Twitter: [https://twitter.com/learn_byexample](https://twitter.com/learn_byexample)
+* Issue Manager: [https://github.com/learnbyexample/vim_reference/issues](https://github.com/learnbyexample/vim_reference/issues)
+* E-mail: learnbyexample.net@gmail.com
+* Twitter: [https://twitter.com/learn_byexample](https://twitter.com/learn_byexample)
 
 ## Author info
 
@@ -56,31 +59,31 @@ When the creative muse strikes, he can be found working on yet another programmi
 
 ## License
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Code snippets are available under [MIT License](https://github.com/learnbyexample/vim_reference/blob/master/LICENSE)
+Code snippets are available under [MIT License](https://github.com/learnbyexample/vim_reference/blob/master/LICENSE).
 
 Resources mentioned in Acknowledgements section above are available under original licenses.
 
 ## Book version
 
-1.0
+2.0
 
 See [Version_changes.md](https://github.com/learnbyexample/vim_reference/blob/master/Version_changes.md) to track changes across book versions.
 
 # Introduction
 
-Back in 2007, I had a rough beginning as a design engineer at a semiconductor company in terms of software tools. Linux command line, Vim and Perl were all new to me. I distinctly remember progressing from `dd` (delete current line) to `d↓` (delete current line as well as the line below) and feeling happy that it reduced time spent on editing. Since I was learning on the job, I didn't know about count prefix or the various ways I could've deleted all the lines from the beginning of the file to the line containing a specific phrase. Or even better, I could've automated editing multiple files if I had been familiar with `sed` or progressed that far with Perl.
+Back in 2007, I had a rough beginning as a design engineer at a semiconductor company in terms of using software tools. Linux command line, Vim and Perl were all new to me. I distinctly remember progressing from `dd` (delete current line) to `d↓` (delete current line as well as the line below) and feeling happy that it reduced time spent on editing. Since I was learning on the job, I didn't know about count prefix or the various ways I could've deleted all the lines from the beginning of the file to the line containing a specific phrase. Or even better, I could've automated editing multiple files if I had been familiar with `sed` or progressed that far with Perl.
 
-I also remember that we got a two-sided printed cheatsheet that we kept pinned to our cabins. That was one of the ways I kept adding commands to my repertoire. But, I didn't have a good insight to Vim's philosophy and I didn't know how to apply many of the cheatsheet commands. At some point, I decided to read the [Vim book by Steve Oualline](http://www.oualline.com/vim-book.html) and that helped a lot, but it was also too long and comprehensive for me to read it all. My memory is hazy after that, and I don't recall what other resources I used. However, I'm sure I didn't effectively utilize built-in help. Nor did I know about [stackoverflow](https://stackoverflow.com/questions/tagged/vim) or [/r/vim](https://www.reddit.com/r/vim/) until after I left my job in 2014.
+I also remember that we got a two-sided printed cheatsheet that we kept pinned to our cabins. That was one of the ways I kept adding commands to my repertoire. But, I didn't have a good insight to Vim's philosophy and I didn't know how to apply many of the cheatsheet commands. At some point, I decided to read the [Vim book by Steve Oualline](http://www.oualline.com/vim-book.html) and that helped a lot, but it was also too long and comprehensive for me to read it all. My memory is hazy after that, and I don't recall what other resources I used. However, I'm sure I didn't effectively utilize built-in help. Nor did I know about [stackoverflow](https://stackoverflow.com/questions/tagged/vim) or [/r/vim](https://old.reddit.com/r/vim/) until after I left my job in 2014.
 
-Still, I knew enough to conduct a few Vim learning sessions for my colleagues. That came in handy when I got chances to teach Vim as part of scripting course for college students. From 2016 to 2018, I started maintaining my tutorials on Linux command line, Vim and scripting languages as GitHub repos. As you might guess, I then started polishing these materials and [published them as ebooks](https://learnbyexample.github.io/books/). This is an ongoing process, with **Vim Reference Guide** being the twelfth ebook.
+Still, I knew enough to conduct a few Vim learning sessions for my colleagues. That came in handy when I got chances to teach Vim as part of a scripting course for college students. From 2016 to 2018, I started maintaining my tutorials on Linux command line, Vim and scripting languages as GitHub repos. As you might guess, I then started polishing these materials and [published them as ebooks](https://learnbyexample.github.io/books/). This is an ongoing process, with **Vim Reference Guide** being the twelfth ebook.
 
 ## Why Vim?
 
-You've probably already heard that Vim is a text editor, powerful one at that. Vim's editing features feel like a programming language and you can customize the editor using scripting languages. Apart from plethora of editing commands and support for regular expressions, you can also incorporate external commands. To sum it up, most editing tasks can be managed from within Vim itself instead of having to write a script.
+You've probably already heard that Vim is a text editor, powerful one at that. Vim's editing features feel like a programming language and you can customize the editor using scripting languages. Apart from a plethora of editing commands and support for regular expressions, you can also incorporate external commands. To sum it up, most editing tasks can be managed from within Vim itself instead of having to write a script.
 
-Now, you might wonder, what is all this need for complicated editing features? Why does a text editor require programming capabilities? Why is there even a requirement to *learn* how to use a text editor? Isn't it enough to have the ability to enter text, use Backspace/Delete/Home/End/Arrow/etc, menu and toolbar, some shortcuts, a search and replace feature and so on? A simple and short answer — to reduce repetitive manual task.
+Now, you might wonder, what is this need for complicated editing features? Why does a text editor require programming capabilities? Why is there even a requirement to *learn* how to use a text editor? Isn't it enough to have the ability to enter text, use keys like Backspace/Delete/Home/End/Arrow/etc, menubar, toolbar, some shortcuts, a search and replace feature and so on? A simple and short answer — to reduce repetitive manual task.
 
 What I like the most about Vim:
 
@@ -90,13 +93,13 @@ What I like the most about Vim:
 * Settings customization and creating new commands
 * Integration with shell commands
 
-There's a huge ecosystem of plugins, packages and colorschemes as well, but I haven't used them much. I've used Vim for a long time, but not really a power user. I prefer using GVim, tab pages, mouse, arrow keys, etc. So, if you come across tutorials and books suggesting you should avoid using them, remember that they are subjective preferences.
+There's a huge ecosystem of plugins, packages and colorschemes as well, but I haven't used them much. I've used Vim for a long time, but not really a power user. I prefer using GVim, tab pages, mouse, arrow keys, etc. So, if you come across tutorials and books suggesting you should avoid using them, remember that they are only subjective preferences.
 
 Here are some more opinions by those who enjoy using Vim:
 
 * [stackoverflow: What are the benefits of learning Vim?](https://stackoverflow.com/q/597077/4082052)
-* [Why Vim](https://www.jakeworth.com/why-vim/)
-* [Vim Creep](https://rudism.com/vim-creep/)
+* [Why Vim](https://www.jakeworth.com/posts/why-vim/)
+* [Vim Creep](https://rudism.com/vim.html)
 
 >![warning](./images/warning.svg) Should everybody use Vim? Is it suitable for all kinds of editing tasks? I'd say no. There are plenty of other well established text editors and new ones are coming up all the time. The learning curve isn't worth it for everybody. If Vim wasn't being used at job, I probably wouldn't have bothered with it. [Don't use Vim for the wrong reasons](https://gist.github.com/romainl/6b952db7a6138b48657ba0fbb9d65370) article discusses this topic in more detail.
 
@@ -109,9 +112,9 @@ sudo apt install vim vim-gui-common
 ```
 
 * [:h usr_90.txt](https://vimhelp.org/usr_90.txt.html) — user manual for installation on different platforms, common issues, upgrading, uninstallation, etc
-* [vi.stackexchange: How can I get a newer version of Vim?](https://vi.stackexchange.com/q/10817/1616) — building from source, using distribution packages, etc 
+* [vi.stackexchange: How can I get a newer version of Vim?](https://vi.stackexchange.com/q/10817/1616) — building from source, using distribution packages, etc
 
->![info](./images/info.svg) See also [https://github.com/vim/vim](https://github.com/vim/vim) for source code and other details.
+>![info](./images/info.svg) See [https://github.com/vim/vim](https://github.com/vim/vim) for source code and other details.
 
 ## Ice Breaker
 
@@ -125,9 +128,9 @@ Open a terminal and follow these steps:
 * Press `:` key
 * Type `wq`
 * Press `Enter` key
-* `cat ip.txt` — sanity check to see what you typed is saved or not
+* `cat ip.txt` — sanity check to see what you typed was saved or not
 
-Phew, what a complicated procedure to write a simple line of text, isn't it? This is the most challenging and confusing part for a Vim newbie. Here's a brief explanation of the above steps:
+Phew, what a complicated procedure to write a simple line of text, isn't it? This is the most challenging and confusing part for a Vim newbie. Here's a brief explanation for the above steps:
 
 * Vim is a **modal editor**. You have to be aware which mode you are in and use commands or type text accordingly
 * When you first launch Vim, it starts in **Normal mode** (primarily used for editing and moving around)
@@ -135,7 +138,7 @@ Phew, what a complicated procedure to write a simple line of text, isn't it? Thi
 * After you've entered the text, you need to save the file. To do so, you have to go back to Normal mode first by pressing the `Esc` key
 * Then, you have to go to yet another mode! Pressing `:` key brings up the **Command-line mode** and awaits further instruction
 * `wq` is a combination of **write** and **quit** commands
-    * use `wq ip.txt` if you forgot to specify the filename while launching Vim, or perhaps if you opened Vim from Start menu instead of a terminal
+    * use `wq ip.txt` if you forgot to specify the filename while launching Vim, or perhaps if you opened Vim from the Start menu instead of a terminal
 * `Enter` key completes the command you've typed
 
 If you launched GVim, you'll likely have **Menu** and **Tool** bars, which would've helped with operations like saving, quitting, etc. Nothing wrong with using them, but this book will not discuss those operations. In fact, you'll learn how to configure Vim to hide them in the [Customizing Vim](#gui-options) chapter.
@@ -151,9 +154,11 @@ Don't proceed any further if you aren't comfortable with the above steps. Take h
 * `gvimtutor` command that opens a tutorial session with lessons to get started with Vim
     * don't worry if something goes wrong as you'll be working with a temporary file
     * use `vimtutor` if `gvim` is not available
-    * **pro-tip**: go through this short tutorial multiple times, spread over multiple days 
+    * **pro-tip**: go through this short tutorial multiple times, spread over multiple days and make copious notes for future reference
 
 >![info](./images/info.svg) Next step is [:h usr_02.txt](https://vimhelp.org/usr_02.txt.html), which provides enough information about editing files with Vim.
+
+>![info](./images/info.svg) See also [vimtutor-sequel](https://github.com/micahkepe/vimtutor-sequel), which provides advanced lessons.
 
 ## Built-in help
 
@@ -170,6 +175,8 @@ Vim comes with comprehensive user and reference manuals. The user manual reads l
 * [:h quickref](https://vimhelp.org/quickref.txt.html) quick reference guide
 * [:h help-summary](https://vimhelp.org/usr_02.txt.html#help-summary) effectively using help depending on the topic/feature you are interested in
     * See also [vi.stackexchange: guideline to use help](https://vi.stackexchange.com/q/2136/1616)
+* [:h version9.txt](https://vimhelp.org/version9.txt.html) what's new in Vim 9
+    * See also [VimLog, a ChangeLog for Vim](https://www.arp242.net/vimlog/)
 
 Here's a neat table from [:h help-context](https://vimhelp.org/#help-context):
 
@@ -192,14 +199,14 @@ As mentioned in the [Preface](#preface) chapter, this **Vim Reference Guide** is
 
 **Tutorials**
 
-* [Vim primer](https://danielmiessler.com/study/vim/) — learn Vim in a way that will stay with you for life
+* [Vim primer](https://danielmiessler.com/p/vim/) — learn Vim in a way that will stay with you for life
 * [Vim galore](https://github.com/mhinz/vim-galore/blob/master/README.md) — everything you need to know about Vim
-* [Learn Vim progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/) — short introduction that covers a lot 
+* [Learn Vim progressively](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/) — short introduction that covers a lot
 * [Vim from the ground up](https://thevaluable.dev/vim-commands-beginner/) — article series for beginners to expert users
 
 **Books**
 
-* [Practical Vim](https://pragprog.com/book/dnvim2/practical-vim-second-edition)
+* [Practical Vim](https://pragprog.com/titles/dnvim2/practical-vim-second-edition/)
 * [Mastering Vim Quickly](https://jovicailic.org/mastering-vim-quickly/)
 * [Learn Vim (the Smart Way)](https://github.com/iggredible/Learn-Vim)
 
@@ -207,8 +214,7 @@ As mentioned in the [Preface](#preface) chapter, this **Vim Reference Guide** is
 
 * [OpenVim](https://www.openvim.com/tutorial.html) — interactive tutorial
 * [Vim Adventures](https://vim-adventures.com/) — learn Vim by playing a game
-* [vimmer.io](https://vimmer.io/) — master Vim from the comfort of your web browser
-* [vim.so](https://www.vim.so/) — interactive lessons designed to help you get better at Vim faster
+* [Learn vim and learn it fast](https://www.learnvim.com/) — interactive lessons designed to help you get better at Vim faster
 
 >![info](./images/info.svg) See my [Vim curated list](https://learnbyexample.github.io/curated_resources/vim.html) for a more complete list of learning resources, cheatsheets, tips, tricks, forums, etc.
 
@@ -223,13 +229,13 @@ As mentioned earlier, Vim is a **modal editor**. This book will mainly discuss t
 
 This section provides a brief description for these modes. Separate chapters will discuss their features in more detail.
 
->![info](./images/info.svg) For a complete list of modes, see [:h vim-modes-intro](https://vimhelp.org/intro.txt.html#vim-modes-intro) and [:h mode-switching](https://vimhelp.org/intro.txt.html#mode-switching).
+>![info](./images/info.svg) For a complete list of modes, see [:h vim-modes-intro](https://vimhelp.org/intro.txt.html#vim-modes-intro) and [:h mode-switching](https://vimhelp.org/intro.txt.html#mode-switching). See also [this comprehensive illustration of navigating modes](https://gist.github.com/kennypete/1fae2e48f5b0577f9b7b10712cec3212).
 
 **Insert mode**
 
 This is the mode where the required text is typed. There are also commands available for moving around, deleting, autocompletion, etc.
 
-Pressing the `Esc` key takes you back to Normal mode.
+Pressing the `Esc` key takes you back to the Normal mode.
 
 **Normal mode**
 
@@ -237,17 +243,17 @@ This is the default mode when Vim is opened. This mode is used to run commands f
 
 **Visual mode**
 
-Visual mode is used to edit text by selecting them first. Selection can either be done using mouse or using visual commands.
+Visual mode is used to edit text by selecting them first. Selection can either be done using mouse or visual commands.
 
 Pressing the `Esc` key takes you back to the Normal mode.
 
 **Command-line mode**
 
-This mode is used to perform file operations like save, quit, search, replace, execute shell commands, etc. Any operation is completed by pressing the `Enter` key after which the mode changes back to the Normal mode. The `Esc` key can be used to ignore whatever is typed and return to the Normal mode.
+This mode is used to perform file operations like save, quit, search, replace, execute shell commands, etc. An operation is completed by pressing the `Enter` key after which the mode changes back to the Normal mode. The `Esc` key can be used to ignore whatever is typed and return to the Normal mode.
 
-The space at the end of the file used for this mode is referred to as Command-line area. It is usually a single line, but can expand for cases like auto completion, shell commands, etc.
+The space at the bottom of the screen used for this mode is referred to as Command-line area. It is usually a single line, but can expand for cases like auto completion, shell commands, etc.
 
-## Identifying current mode
+## Identifying the current mode
 
 * In Insert mode, you get a blinking `|` cursor
     * also, `-- INSERT --` can be seen on the left hand side of the Command-line area
@@ -285,21 +291,21 @@ There are context aware operations too. For example:
 If you are a fan of selecting text before editing them, you can use the Visual mode. There are several commands you can use to start Visual mode. If enabled, you can even use mouse to select the required portions.
 
 * `~` invert the case of the visually selected text (i.e. lowercase becomes UPPERCASE and vice versa)
-* `g` followed by `Ctrl`+`a` for visually selected lines, increment number by `1` for the first line, by `2` for the second line, by `3` for the third line and so on
+* `g` followed by `Ctrl`+`a` for visually selected lines, increment numbers by `1` for the first line, by `2` for the second line, by `3` for the third line and so on
 
 The Command-line mode is useful for file level operations, search and replace, changing Vim configurations, talking to external commands and so on.
 
 * `/searchpattern` search the given pattern in the forward direction
 * `:g/call/d` delete all lines containing `call`
 * `:g/cat/ s/animal/mammal/g` replace `animal` with `mammal` only for the lines containing `cat`
-* `:3,8! sort` sort only lines `3` to `8` (uses external command `sort`)
-* `:set incsearch` highlights current match as you type the search pattern
+* `:3,8! sort` sort only lines `3` to `8` (uses an external command `sort`)
+* `:set incsearch` highlights the current match as you type the search pattern
 
 Changes to Vim configurations from the Command-line mode are applicable only for that particular session. You can use the `vimrc` file to load the settings at startup.
 
-* `colorscheme murphy` use a dark theme
+* `colorscheme murphy` a dark theme
 * `set tabstop=4` width for the tab character (default is `8`)
-* `nnoremap <F5> :%y+<CR>` map `F5` key to copy everything to system clipboard in Normal mode
+* `nnoremap <F5> :%y+<CR>` map `F5` key to copy everything to the system clipboard in Normal mode
 * `inoreabbrev teh the` automatically correct `teh` to `the` in Insert mode
 
 There are many more Vim features that'd help you with text processing and customizing the editor to your needs, some of which you'll get to know in the coming chapters.
@@ -318,7 +324,7 @@ See [Where Vim Came From](https://twobithistory.org/2018/08/05/where-vim-came-fr
 
 ## Chapters
 
-Here's the list of remaining chapters:
+Here's a list of remaining chapters:
 
 * [Insert mode](#insert-mode)
 * [Normal mode](#normal-mode)
@@ -363,38 +369,44 @@ This is the mode where the required text is typed. There are also commands avail
 * `Delete` delete the character after the cursor
 * `Backspace` delete the character before the cursor
     * `Ctrl`+`h` also deletes the character before the cursor
-* `Ctrl`+`w` delete characters before the cursor until start of a word
+* `Ctrl`+`w` delete characters before the cursor until the start of a word
     * From [:h word](https://vimhelp.org/motion.txt.html#word) "A word consists of a sequence of letters, digits and underscores, or a sequence of other non-blank characters, separated with white space"
 * `Ctrl`+`u` delete all the characters before the cursor in the current line, preserves indentation if any
+    * if you have typed some characters in an existing line, this will delete characters till the starting point of the modification
 
 ## Autocomplete word
 
 * `Ctrl`+`p` autocomplete word based on matching words in the backward direction
 * `Ctrl`+`n` autocomplete word based on matching words in the forward direction
 
->![info](./images/info.svg) If more than one word matches, they are displayed using a popup menu. You can use `↑`/`↓` arrow keys or `Ctrl`+`p`/`Ctrl`+`n` to move through this list.
+If more than one word matches, they are displayed using a popup menu. You can take further action using the following options:
 
->![info](./images/info.svg) With multiple matches, you'll notice that the first match is automatically inserted and moving through the list doesn't change the text that was inserted. You'll have to press `Ctrl`+`y` or `Enter` key to choose a different completion text. If you were satisfied with the first match, typing any character will make the popup menu disappear and insert whatever character you had typed. Or press `Esc` to select the first match and go to Normal mode.
+* `↑` and `↓` move up and down the list, but doesn't change the autocompleted text
+* `Ctrl`+`p` and `Ctrl`+`n` move up and down the list as well as change the autocompleted text to that particular selection
+* `Ctrl`+`y` confirm the current selection (the popup menu disappears)
+    * you can also use the `Enter` key for confirmation if you have used the arrow keys to move through the popup list
+
+>![info](./images/info.svg) Typing any character will make the popup menu disappear and insert whatever character you had typed.
 
 ## Autocomplete line
 
 * `Ctrl`+`x` followed by `Ctrl`+`l` autocomplete line based on matching lines in the backward direction
 
->![info](./images/info.svg) If more than one line matches, they are displayed using a popup menu. You can use `↑`/`↓` arrow keys or `Ctrl`+`p`/`Ctrl`+`n` to move through this list. You can also use `Ctrl`+`l` to move up the list.
+>![info](./images/info.svg) If more than one line matches, they are displayed using a popup menu. In addition to the options seen in the previous section, you can also use `Ctrl`+`l` to move up the list.
 
 ## Autocomplete assist
 
 * `Ctrl`+`e` cancels autocomplete
     * you'll retain the text you had typed before invoking autocomplete
-* `Ctrl`+`y` or `Enter` change the autocompletion text to the currently selected item from the popup menu
 
 >![info](./images/info.svg) See [:h ins-completion](https://vimhelp.org/insert.txt.html#ins-completion) for more details and other autocomplete features. See [:h 'complete'](https://vimhelp.org/options.txt.html#%27complete%27) setting for customizing autocomplete commands.
 
-## Execute single Normal mode command
+## Execute a Normal mode command
 
 * `Ctrl`+`o` execute a Normal mode command and return to Insert mode
     * `Ctrl`+`o` followed by `A` moves the cursor to the end of the current line
     * `Ctrl`+`o` followed by `3j` moves the cursor three lines below
+    * `Ctrl`+`o` followed by `ce` clear till the end of the word
 
 ## Indenting
 
@@ -402,7 +414,7 @@ This is the mode where the required text is typed. There are also commands avail
 * `Ctrl`+`d` unindent the current line
 * `0` followed by `Ctrl`+`d` deletes all indentation in the current line
 
->![info](./images/info.svg) Indentation depends on the `shiftwidth` setting. See [:h 'shiftwidth'](https://vimhelp.org/options.txt.html#%27shiftwidth%27) for more details.
+>![info](./images/info.svg) Cursor can be anywhere in the line for the above features. Indentation depends on the `shiftwidth` setting. See [:h 'shiftwidth'](https://vimhelp.org/options.txt.html#%27shiftwidth%27) for more details.
 
 ## Insert register contents
 
@@ -426,7 +438,7 @@ From [:h 24.6](https://vimhelp.org/usr_24.txt.html#24.6):
     * `Ctrl`+`v` followed by `Enter` gives `^M`
 * `Ctrl`+`q` alias for `Ctrl`+`v`, helps if it is mapped to do something else
 
->![info](./images/info.svg) You'll see a practical usage of this command in [Macro](#macro) chapter. You can also specify the character using decimal, octal or hexadecimal formats. See [:h 24.8](https://vimhelp.org/usr_24.txt.html#24.8) for more details.
+>![info](./images/info.svg) You'll see a practical usage of this command in the [Macro](#macro) chapter. You can also specify the character using decimal, octal or hexadecimal formats. See [:h 24.8](https://vimhelp.org/usr_24.txt.html#24.8) for more details.
 
 ## Insert digraphs
 
@@ -449,20 +461,20 @@ Make sure you are in Normal mode before trying out the commands in this chapter.
 
 ## Arrow motions
 
-The four arrow keys can be used in Vim to move around, just like other text editors. Vim also maps them to four characters in Normal mode.
+The four arrow keys can be used in Vim to move around, just like other text editors. Vim also maps them to four letters in Normal mode.
 
 * `h` or `←` move left by one character within the current line
 * `j` or `↓` move down by one line
 * `k` or `↑` move up by one line
 * `l` or `→` move right by one character within the current line
 
-Vim offers plenty of other motion commands. Several sections will discuss them later in this chapter.
+Vim offers a plethora of motion commands. Several sections will discuss them later in this chapter.
 
 >![info](./images/info.svg) You can use the `whichwrap` setting to allow `←` and `→` arrow keys to cross lines. For example, `:set ww+=<,>` tells Vim to allow left and right arrow keys to move across lines in Normal and Visual modes. Add `h` and `l` to this comma separated list if want those commands to cross lines as well.
 
 ## Cut
 
-There are various ways to delete text. All of these commands can be prefixed with a **count** value. `d` and `c` commands can accept any motion commands. Only arrow motion examples are shown in this section, many more variations will be discussed later in this chapter.
+There are various ways to delete text. All of these commands can be prefixed with a **count** value. `d` and `c` commands can accept any of the motion commands. Only arrow motion examples are shown in this section, many more variations will be discussed later in this chapter.
 
 * `dd` delete the current line
 * `2dd` delete the current line and the line below it (total 2 lines)
@@ -475,7 +487,7 @@ There are various ways to delete text. All of these commands can be prefixed wit
 * `D` delete from the current character to the end of line (same as `d$`, where `$` is a motion command to move to the end of line)
 * `x` delete only the current character under the cursor (same as `dl`)
 * `5x` delete the character under the cursor and 4 characters to its right (total 5 characters)
-* `X` delete only the current character before the cursor (same as `dh`)
+* `X` delete the character before the cursor (same as `dh`)
     * if the cursor is on the first character in the line, deleting would depend on the `whichwrap` setting as discussed earlier
 * `5X` delete 5 characters to the left of the cursor
 * `cc` delete the current line and change to Insert mode
@@ -512,11 +524,11 @@ There are various ways to copy text using the **yank** command `y`.
 The **put** (paste) command `p` is used after cut or copy operations.
 
 * `p` paste the copied content once
-    * If the copied text was line based, content is pasted **below** the current line
-    * If the copied text was part of a line, content is pasted to the **right** of the cursor
+    * if the copied text was line based, content is pasted **below** the current line
+    * if the copied text was part of a line, content is pasted to the **right** of the cursor
 * `P` paste the copied content once
-    * If the copied text was line based, content is pasted **above** the current line
-    * If the copied text was part of a line, content is pasted to the **left** of the cursor
+    * if the copied text was line based, content is pasted **above** the current line
+    * if the copied text was part of a line, content is pasted to the **left** of the cursor
 * `3p` and `3P` paste the copied content three times
 * `]p` paste the copied content like `p` command, but changes the indentation level to match the current line
 * `[p` paste the copied content like `P` command, but changes the indentation level to match the current line
@@ -542,7 +554,7 @@ Often, you just need to change one character. For example, changing `i` to `j`, 
 * `rj` replace the character under the cursor with `j`
 * `ry` replace the character under the cursor with `y`
 * `3ra` replace the character under cursor as well as the two characters to the right with `aaa`
-    * no changes will be made if there aren't sufficient characters to match
+    * the command will entirely fail if there aren't sufficient characters to match the count
 
 To replace multiple characters with different characters, use `R`.
 
@@ -571,9 +583,9 @@ From [:h 4.3](https://vimhelp.org/usr_04.txt.html#04.3):
 * `o` open a new line below the current line and change to Insert mode
 * `O` open a new line above the current line and change to Insert mode
 
->![info](./images/info.svg) Indentation of the new line depends on `autoindent`, `smartindent` and `cindent` settings.
+>![info](./images/info.svg) Indentation of the new line depends on the `autoindent`, `smartindent` and `cindent` settings.
 
-## Moving within current line
+## Moving within the current line
 
 * `0` move to the beginning of the current line (i.e. column number 1)
     * you can also use the `Home` key
@@ -601,7 +613,7 @@ Moving within long lines that are spread over multiple screen lines:
 
 ## Character motions
 
-These commands allow you to move based on single character search, **within the current line only**.
+These commands allow you to move based on a single character search, **within the current line only**.
 
 * `f(` move forward to the next occurrence of character `(`
 * `fb` move forward to the next occurrence of character `b`
@@ -610,15 +622,15 @@ These commands allow you to move based on single character search, **within the 
 * `3tx` move forward to the character just before the third occurrence of character `x`
 * `Fa` move backward to the character `a`
 * `Ta` move backward to the character just after `a`
-* `;` repeat previous `f` or `F` or `t` or `T` motion in the same direction
-* `,` repeat previous `f` or `F` or `t` or `T` motion in the opposite direction
+* `;` repeat the previous character motion in the same direction
+* `,` repeat the previous character motion in the opposite direction
     * for example, `tc` becomes `Tc` and vice versa
 
->![info](./images/info.svg) Note that the previously used count prefix wouldn't be repeated with `;` or `,` commands, but you can use a new count prefix. If you pressed a wrong motion command, use the `Esc` key to abandon the search instead of continuing with the wrongly chosen command.
+>![info](./images/info.svg) Note that the previously used count prefix wouldn't be repeated with the `;` or `,` commands, but you can use a new count prefix. If you pressed a wrong motion command, use the `Esc` key to abandon the search instead of continuing with the wrongly chosen command.
 
 ## Word motions
 
-Definitions from [:h word](https://vimhelp.org/motion.txt.html#word) and [:h WORD](https://vimhelp.org/motion.txt.html#WORD) are quoted below to explain the difference between **word** and **WORD**.
+Definitions from [:h word](https://vimhelp.org/motion.txt.html#word) and [:h WORD](https://vimhelp.org/motion.txt.html#WORD) are quoted below:
 
 >**word** A word consists of a sequence of letters, digits and underscores, or a sequence of other non-blank characters, separated with white space (spaces, tabs, `<EOL>`). This can be changed with the `iskeyword` option. An empty line is also considered to be a word.
 
@@ -626,7 +638,7 @@ Definitions from [:h word](https://vimhelp.org/motion.txt.html#word) and [:h WOR
 
 * `w` move to the start of the next word
 * `W` move to the start of the next WORD
-    * `192.1.168.43;hello` is considered as a single WORD, but has multiple words
+    * `192.1.168.43;hello` is considered a single **WORD**, but has multiple **words**
 * `b` move to the beginning of the current word if the cursor is *not* at the start of word. Otherwise, move to the beginning of the previous word
 * `B` move to the beginning of the current WORD if the cursor is *not* at the start of WORD. Otherwise, move to the beginning of the previous WORD
 * `e` move to the end of the current word if cursor is *not* at the end of word. Otherwise, move to the end of next word
@@ -670,8 +682,8 @@ Definitions from [:h word](https://vimhelp.org/motion.txt.html#word) and [:h WOR
 
 ## Scrolling
 
-* `Ctrl`+`d` scroll half page down
-* `Ctrl`+`u` scroll half page up
+* `Ctrl`+`d` scroll half a page down
+* `Ctrl`+`u` scroll half a page up
 * `Ctrl`+`f` scroll one page forward
 * `Ctrl`+`b` scroll one page backward
 * `Ctrl` followed by **Mouse Scroll** scroll one page forward or backward
@@ -707,7 +719,7 @@ Definitions from [:h word](https://vimhelp.org/motion.txt.html#word) and [:h WOR
 
 ## Mark frequently used locations
 
-* `ma` mark location in the file using the alphabet `a`
+* `ma` mark a location in the file using the alphabet `a`
     * you can use any of the 26 alphabets
     * use lowercase alphabets to work within the current file
     * use uppercase alphabets to work from any file
@@ -777,7 +789,7 @@ Vim also provides a list of handy context based options to make certain editing 
 * `di"` delete all characters within a pair of double quotes, regardless of where the cursor is within the quotes
 * `da'` delete all characters within a pair of single quotes along with the quote characters
 * `ci(` delete all characters within `()` and change to Insert mode
-    * Works even if the parenthesis are spread over multiple lines, nesting is taken care as well
+    * Works even if the parentheses are spread over multiple lines, nesting is taken care as well
 * `ya}` copy all characters within `{}` including the `{}` characters
     * Works even if the braces are spread over multiple lines, nesting is taken care as well
 
@@ -804,7 +816,7 @@ You can use lowercase alphabets `a-z` to save some content for future use. You c
 Vim has nine other types of registers for different use cases. Here are some of them:
 
 * `"` all yanked/deleted text is stored in this register
-    * So, `p` command is same as specifying `""p`
+    * So, the `p` command is same as specifying `""p`
 * `"0` yanked text is stored in this register
     * A possible use case: yank some content, delete something else and then paste the yanked content using `"0p`
 * `"1` to `"9` deleted contents are stored in these registers and get shifted with each new deletion
@@ -814,7 +826,7 @@ Vim has nine other types of registers for different use cases. Here are some of 
     * `gg"+yG` copy entire file contents to the clipboard
     * `"+p` paste content from the clipboard
 * `"*` this register stores visually selected text
-    * contents of this register can be pasted using **middle mouse button click** or `"*p`
+    * contents of this register can be pasted using **middle mouse button click** or `"*p` or `Shift`+`Insert`
 * `"_` black hole register, when you want to delete something without saving it anywhere
 
 **Further reading**
@@ -822,7 +834,7 @@ Vim has nine other types of registers for different use cases. Here are some of 
 * [:h registers](https://vimhelp.org/change.txt.html#registers)
 * [stackoverflow: How to use Vim registers](https://stackoverflow.com/q/1497958/4082052)
 * [stackoverflow: Using registers on Command-line mode](https://stackoverflow.com/q/3997078/4082052)
-* [Advanced Vim registers](https://sanctum.geek.nz/arabesque/advanced-vim-registers/)
+* [Advanced Vim registers](https://blog.sanctum.geek.nz/advanced-vim-registers/)
 
 ## Search word nearest to the cursor
 
@@ -838,7 +850,7 @@ Vim has nine other types of registers for different use cases. Here are some of 
 ## Join lines
 
 * `J` joins the current line and the next line
-    * the deleted `<EOL>` character is replaced with a space (unless there are trailing spaces or the next line starts with a `)` character)
+    * the deleted `<EOL>` character is replaced with a space, unless there are trailing spaces or the next line starts with a `)` character
     * indentation from the lines being joined are removed, *except the current line*
 * `3J` joins the current line and next two lines with one space in between the lines
 * `gJ` joins the current line and the next line
@@ -878,7 +890,7 @@ Vim has nine other types of registers for different use cases. Here are some of 
 * `Ctrl`+`g` display file information like name, number of lines, etc at the bottom of the screen
     * See [:h CTRL-G](https://vimhelp.org/editing.txt.html#CTRL-G) for more details and related commands
 * `g` followed by `Ctrl`+`g` display information about the current location of the cursor (column, line, word, character and byte counts)
-* `ga` shows codepoint value of the character under the cursor in decimal, octal and hexadecimal formats
+* `ga` shows the codepoint value of the character under the cursor in decimal, octal and hexadecimal formats
 * `g?` followed by motion command to change those characters with `rot13` transformation
     * `g?e` on start of `hello` word will change it to `uryyb`
     * `g?e` on start of `uryyb` word will change it to `hello`
@@ -895,7 +907,7 @@ Vim has nine other types of registers for different use cases. Here are some of 
 * `A` place the cursor at the end of the line
 * `o` open a new line below the current line and change to Insert mode
 * `O` open a new line above the current line and change to Insert mode
-* `s` delete character under the cursor and change to Insert mode
+* `s` delete the character under the cursor and change to Insert mode
 * `S` delete the current line and change to Insert mode
     * `cc` can also be used
     * indentation will be preserved depending on the `autoindent` setting
@@ -914,11 +926,11 @@ Vim has nine other types of registers for different use cases. Here are some of 
 * `Ctrl`+`v` visually select column
 * `gv` select previously highlighted visual area
 
->![info](./images/info.svg) See [:h mode-switching](https://vimhelp.org/intro.txt.html#mode-switching) for a complete table.
+>![info](./images/info.svg) See [:h mode-switching](https://vimhelp.org/intro.txt.html#mode-switching) for a complete table. See also [this comprehensive illustration of navigating modes](https://gist.github.com/kennypete/1fae2e48f5b0577f9b7b10712cec3212).
 
 # Command-line mode
 
-Any operation in Command-line mode is completed by pressing the `Enter` key after which the mode changes back to the Normal mode. Press `Esc` key to ignore whatever is typed and return to the Normal mode.
+An operation in Command-line mode is completed by pressing the `Enter` key after which the mode changes back to the Normal mode. Press `Esc` key to ignore whatever is typed and return to the Normal mode.
 
 **Documentation links**:
 
@@ -931,19 +943,18 @@ Any operation in Command-line mode is completed by pressing the `Enter` key afte
 * [:h cmdline.txt](https://vimhelp.org/cmdline.txt.html) — reference manual for Command-line mode
 * [:h windows.txt](https://vimhelp.org/windows.txt.html) — reference manual for Editing with multiple windows and buffers
 
->![info](./images/info.svg) Recall that you need to add `:` or `c_` prefix for built-in help on Command-line mode, for example [:h :w](https://vimhelp.org/editing.txt.html#%3Aw) and [:h c_CTRL-R](https://vimhelp.org/cmdline.txt.html#c_CTRL-R). Use single quotes around options, [:h 'autoindent'](https://vimhelp.org/options.txt.html#%27autoindent%27) for example.
+>![info](./images/info.svg) Add `:` or `c_` prefix for built-in help on Command-line mode, for example [:h :w](https://vimhelp.org/editing.txt.html#%3Aw) and [:h c_CTRL-R](https://vimhelp.org/cmdline.txt.html#c_CTRL-R). Use single quotes around options, [:h 'autoindent'](https://vimhelp.org/options.txt.html#%27autoindent%27) for example.
 
 ## Save changes
 
 * `:w` save changes (`:w` is short for `:write`)
 * `:w filename` provide a filename if it is a new file or if you want to save to another file
-* `:w >> filename` append to an existing file
-    * use `w!` to create a new file if it doesn't exist
-* `:wa` save all changed buffers (`:wa` is short for `:wall`)
+* `:w >> filename` append to an existing file (`w!` will create a new file if it doesn't exist)
+* `:wa` save all the changed buffers (`:wa` is short for `:wall`)
 
 >![info](./images/info.svg) Appending `!` forces Vim to override errors, provided you have the appropriate permissions. For example, if you have edited a read-only file, `:w` will result in an error and `:w!` will save the changes. Another case where you'll get an error is `:w filename` if the file already exists. Using `:w! filename` will override the error.
 
->![info](./images/info.svg) By default, entire file content is used for these commands. You can use a range (discussed later in this chapter) to work with selective lines.
+>![info](./images/info.svg) By default, the entire file content is used for these commands. You can use a range (discussed later in this chapter) to work with selective lines.
 
 ## Quit Vim
 
@@ -952,7 +963,7 @@ Any operation in Command-line mode is completed by pressing the `Enter` key afte
     * you will get an error message if there are unsaved changes
 * `:qa` quit all (`:qa` is short for `:quitall`)
     * you will get an error message if there are unsaved changes
-* `:confirm qa` similar to quit all, but provides a prompt for every file that has unsaved changes
+* `:confirm qa` similar to quit all, but prompts for every file that has unsaved changes
 
 >![info](./images/info.svg) Append `!` to discard unsaved changes and quit.
 
@@ -992,7 +1003,7 @@ Multiple files can be opened in Vim within the same tab page and/or in different
 
 >![info](./images/info.svg) See [:h 'autowrite'](https://vimhelp.org/options.txt.html#%27autowrite%27) option if you want to automatically save changes when moving to another buffer.
 
->![info](./images/info.svg) See [:h 22.4](https://vimhelp.org/usr_22.txt.html#22.4) and [:h buffer-hidden](https://vimhelp.org/windows.txt.html#buffer-hidden) for user and reference manuals on working with buffer list.
+>![info](./images/info.svg) See [:h 22.4](https://vimhelp.org/usr_22.txt.html#22.4) and [:h buffer-hidden](https://vimhelp.org/windows.txt.html#buffer-hidden) for user and reference manuals on working with buffer lists.
 
 ### Tabs
 
@@ -1091,7 +1102,7 @@ Usage guidelines:
 * `set {option}` get the current value of number or string option
     * for example, try `:set history` or `:set ww`
 
->![info](./images/info.svg) See [:h options.txt](https://vimhelp.org/options.txt.html) for complete list of usage guidelines and available options.
+>![info](./images/info.svg) See [:h options.txt](https://vimhelp.org/options.txt.html) for a complete list of usage guidelines and available options.
 
 ## Search
 
@@ -1101,7 +1112,7 @@ Usage guidelines:
 * `n` move to the next match in the same direction as the last search
     * if you used `/` for searching, `n` will move in the forward direction
     * if you used `?` for searching, `n` will move in the backward direction
-* `N` move to the next match in the opposite direction as the last search
+* `N` move to the next match in the opposite direction of the last search
 * `/` followed by `Enter` repeat the last search in the forward direction
 * `?` followed by `Enter` repeat the last search in the backward direction
 * `Ctrl`+`c` cancel the search if it is taking too long
@@ -1111,7 +1122,7 @@ By default, the cursor is placed at the starting character of the match. There a
 * `/searchpattern/s` place the cursor at the start of the match
     * same as `/searchpattern` or `/searchpattern/s+0`
     * you can also use `b` (begin) instead of `s`, but it'll change to `s` after the command is executed
-* `/searchpattern/s+2` place the cursor `2` characters after the start of the match (i.e. third character of the match)
+* `/searchpattern/s+2` place the cursor `2` characters after the start of the match (i.e. the third character of the match)
 * `/searchpattern/s-2` place the cursor `2` characters before the start of the match
 * `/searchpattern/e` place the cursor at the end of the match
 * `/searchpattern/e+4` place the cursor `4` characters after the end of the match
@@ -1128,30 +1139,30 @@ Highlight settings:
 * `:set incsearch` highlights current match as you type the pattern, the screen is updated automatically as needed
     * other matching portions will be highlighted based on `hlsearch` settings
     * if you press `Esc` instead of `Enter`, you'll end up where you originally started before the search
-* `:noh` clear currently highlighted patterns, if any (`:noh` is short for `:nohlsearch`)
+* `:noh` clear the currently highlighted patterns, if any (`:noh` is short for `:nohlsearch`)
 
 >![info](./images/info.svg) Using an empty pattern will repeat the last searched pattern. So, you can use something like `//s+3` to repeat the last search with this new offset. Empty pattern can be used with substitution command as well (discussed later in this chapter). See [:h last-pattern](https://vimhelp.org/pattern.txt.html#last-pattern) for more details.
 
->![info](./images/info.svg) You can prefix a count value to `/`, `?`, `n` and `N` commands. Also, searching will automatically wrap around when it reaches the top or bottom of the file contents, unless you set the `nowrapscan` option.
+>![info](./images/info.svg) You can prefix a count value to the `/`, `?`, `n` and `N` commands. Also, searching will automatically wrap around when it reaches the top or bottom of the file contents, unless you set the `nowrapscan` option.
 
 >![info](./images/info.svg) Characters like `.`, `^`, `$`, etc have special meaning in the `searchpattern`. These will be discussed in detail in the [Regular Expressions](#regular-expressions) chapter.
 
 ## Range
 
-By default, certain commands like `:d` and `:s` apply to the current line whereas commands like `:w` and `:perldo` apply to the entire file. You can use range to change the lines that are acted upon.
+By default, certain commands like `:d` and `:s` apply to the current line whereas commands like `:w` and `:perldo` apply to the entire file. You can prefix a range to change the lines that are acted upon.
 
-* `:d` delete the current line (`:d` is short for `:delete` command)
+* `:d` delete the current line (`:d` is short for the `:delete` command)
 * `:.w filename` save the current line (represented by `.`) to the given filename
     * recall that by default `:w` works on the entire file
 * `:5d` delete the fifth line
 * `:$d` delete the last line (represented by `$`)
-* `:25m0` move the twenty-fifth line to the start of the file (`:m` is short for `:move` command)
+* `:25m0` move the twenty-fifth line to the start of the file (`:m` is short for the `:move` command)
     * the number following `m` is the line number *after* which you want to place the lines specified by the range
     * use `:t` (or `:co` or `:copy`) command if you want to copy instead of moving
-* `:2,10d` delete second to tenth lines (comma is used here to separate start and end ranges)
-* `:5,$d` delete fifth line to the last line
-* `:5,$-1d` delete fifth line to the last but one line
-* `:%d` delete all the lines (`%` is a shortcut for `1,$` range)
+* `:2,10d` delete the second to tenth lines (comma is used here to separate the start and end ranges)
+* `:5,$d` delete the fifth line to the last line
+* `:5,$-1d` delete the fifth line to the last but one line
+* `:%d` delete all the lines (`%` is a shortcut for the `1,$` range)
 * `:/pat1/,/pat2/d` delete the matching range of lines in the forward direction from the current cursor position (forward because `/` is used)
     * if there are multiple matches, only the first such range will be deleted
     * use `?pattern?` to find a match in the backward direction
@@ -1159,7 +1170,7 @@ By default, certain commands like `:d` and `:s` apply to the current line wherea
 * `:/pat1/;+1d` delete the line matching `pat1` as well as the line after (total `2` lines)
     * using `;` will set the line matched by the first pair of the range as the current line for the second pair
 * `:/pat1/;-2d` delete the line matching `pat1` as well as two lines before (total `3` lines)
-* `:5;/pat1/d` delete from fifth line to a line matching `pat1` after the fifth line
+* `:5;/pat1/d` delete from the fifth line to a line matching `pat1` after the fifth line
     * note the use of `;` again here, the search will be based on the current cursor line if you use `,` instead of `;`
 * `:'a,'bd` delete from the line marked by `a` to the line marked by `b`
 
@@ -1175,7 +1186,7 @@ By default, certain commands like `:d` and `:s` apply to the current line wherea
 :[range]s[ubstitute]/{pattern}/{string}/[flags] [count]
 ```
 
-General syntax for `s` command (short for `substitute`) is shown above. Space between the `range` and `s` is optional, which you can use for readability.
+General syntax for the `s` command (short for `substitute`) is shown above. Space between the `range` and `s` is optional, which you can use for readability.
 
 * `: s/a/b/` replace the first occurrence of `a` with `b` on the current line only
     * you can also use `:. s/a/b/` (recall that `.` represents the current line)
@@ -1190,7 +1201,7 @@ General syntax for `s` command (short for `substitute`) is shown above. Space be
 
 >![info](./images/info.svg) You can leave the `searchpattern` as empty to reuse the previously searched pattern, which could be from `/`, `?`, `*`, `s` command, etc. See [:h last-pattern](https://vimhelp.org/pattern.txt.html#last-pattern) for more details.
 
->![info](./images/info.svg) See [Regular Expressions](#regular-expressions) chapter for more details on the substitute command.
+>![info](./images/info.svg) See the [Regular Expressions](#regular-expressions) chapter for more details on the substitute command.
 
 ## Editing lines filtered by a pattern
 
@@ -1198,7 +1209,7 @@ General syntax for `s` command (short for `substitute`) is shown above. Space be
 :[range]g[lobal]/{pattern}/[cmd]
 ```
 
-General syntax for `g` command (short for `global`) is shown above. This command is used to edit lines that are first filtered based on a `searchpattern`. You can use `g!` or `v` to act on lines *not* satisfying the filtering condition.
+General syntax for the `g` command (short for `global`) is shown above. This command is used to edit lines that are first filtered based on a `searchpattern`. You can use `g!` or `v` to act on lines *not* satisfying the filtering condition.
 
 * `:g/call/d` delete all lines containing `call`
     * similar to the `d` Normal mode command, the deleted contents will be saved to the default `"` register
@@ -1221,11 +1232,11 @@ General syntax for `g` command (short for `global`) is shown above. This command
 
 You can also use shell commands from within Vim (assuming you have access to these commands).
 
-* `:!ls` execute the given shell command and display output
+* `:!ls` execute the given shell command and display its output
     * the results are displayed as part of an expanded Command-line area, doesn't change contents of the file
 * `:.! date` replace the current line with the output of the given command
     * pressing `!!` in Normal mode will also result in `:.!`
-    * `!` waits for motion similar to `d` and `y` commands, `!G` will give `:.,$!`
+    * `!` waits for motion similar to the `d` and `y` commands, `!G` will give `:.,$!`
 * `:%! sort` sort all the lines
     * recall that `%` is a shortcut for the range `1,$`
     * note that this executes an external command, not the built-in `:sort` command
@@ -1234,9 +1245,9 @@ You can also use shell commands from within Vim (assuming you have access to the
 * `:r report.log` insert contents of the given file below the current line
     * Note that `!` is not used here since there is no shell command
 * `:.!grep '^Help ' %` replace the current line with all the lines starting with `Help` in the current file
-    * `%` here refers to current file contents
+    * `%` here refers to the current file contents
 * `:sh` open a shell session within Vim
-    * use `exit` command to quit the session
+    * use the `exit` command to quit the session
 
 >![info](./images/info.svg) See [:h :!](https://vimhelp.org/various.txt.html#%3A%21cmd), [:h :sh](https://vimhelp.org/various.txt.html#%3Ash) and [:h :r](https://vimhelp.org/insert.txt.html#%3Ar) for more details.
 
@@ -1252,7 +1263,7 @@ You can also use shell commands from within Vim (assuming you have access to the
     * see the [Splitting](#splitting) section discussed earlier in this chapter for more such commands
 * `Ctrl`+`w` followed by `N` goes to Terminal-Normal mode which will help you to move around using Normal mode commands, copy text, etc (note that you need to use uppercase `N` here)
     * `Ctrl`+`\` followed by `Ctrl`+`n` another way to go to Terminal-Normal mode
-    * `:tnoremap <Esc> <C-w>N` map `Esc` key to go to Terminal-Normal mode (use of maps will be discussed in more detail in [Customizing Vim](#customizing-vim) chapter)
+    * `:tnoremap <Esc> <C-w>N` map `Esc` key to go to Terminal-Normal mode (use of maps will be discussed in more detail in the [Customizing Vim](#customizing-vim) chapter)
 * `Ctrl`+`w` followed by `:` go to Command-line mode from terminal window
 
 >![info](./images/info.svg) Depending on your shell, you can use the `exit` command to end the terminal session. `Ctrl+d` might work too.
@@ -1263,7 +1274,7 @@ You can also use shell commands from within Vim (assuming you have access to the
 
 * `:set number` prefix line numbers
     * this is a visual guideline, doesn't modify the text
-    * see [:h 'numberwidth'](https://vimhelp.org/options.txt.html#%27numberwidth%27) for setting the width of number prefix
+    * see [:h 'numberwidth'](https://vimhelp.org/options.txt.html#%27numberwidth%27) for setting the width of the prefix
 * `:set number!` toggle number setting
 * `:set nonumber` don't use line number prefix
 * `:set relativenumber` prefix line numbers relative to the current line
@@ -1316,9 +1327,9 @@ The `:mksession` command doesn't save the `viminfo` file. You'll have to save an
 Once you are in Command-line mode (after typing `:` or `/` or `?`), you can use the commands discussed below. Many of these commands are similar to those available in the Insert mode.
 
 * `←` and `→` move the cursor left and right respectively by one character
-    * if available, you can also use the mouse to position the cursor
+    * you can also use the mouse to position the cursor
 * `Ctrl`+`←` and `Ctrl`+`→` move the cursor left and right respectively by one WORD
-    * you can also use `Shift` key instead of `Ctrl`
+    * you can also use the `Shift` key instead of `Ctrl`
     * Note that in Insert mode this command moves by word, not WORD
 * `Ctrl`+`b` or `Home` move to the beginning
 * `Ctrl`+`e` or `End` move to the end
@@ -1340,7 +1351,7 @@ Once you are in Command-line mode (after typing `:` or `/` or `?`), you can use 
 
 ## Command-line history
 
-There are separate history lists for `:` commands, `searchpattern`, etc. These lists make it easy to reuse (after modifications if necessary) previously used commands.
+There are separate history lists for `:` commands, `searchpattern`, etc. These lists make it easy to reuse (after modifications if necessary) previously executed commands.
 
 * `↑` and `↓` move through the history lists
     * if you have already typed some characters, you will get only the commands starting with those characters
@@ -1349,7 +1360,7 @@ There are separate history lists for `:` commands, `searchpattern`, etc. These l
 
 ## Command-line window
 
-You can also view, edit and execute history of commands using a special Command-line window. You can open this special window from Normal mode as well as Command-line mode. This window will be in Normal mode by default, which will allow you to move around easily. You can also edit any of the history commands if you wish.
+You can also view, edit and execute the history of commands using a special Command-line window. You can open this special window from Normal mode as well as Command-line mode. This window will be in Normal mode by default, which will allow you to move around easily. You can also edit any of the history commands if you wish.
 
 * `q:` window for `:` commands (from Normal mode)
 * `q/` and `q?` window for search patterns (from Normal mode)
@@ -1379,7 +1390,7 @@ Visual mode allows you to perform editing tasks on selected portions of text. Th
     * `vip` selects a paragraph (text object) and so on
 * `V` visually select the current line, you can extend this using motion commands
     * `Vgg` selects the current line and then extends to the start of the file
-* `Ctrl`+`v` visually select column(s)
+* `Ctrl`+`v` visually select columns
     * `Ctrl`+`v` followed by `3j2l` selects a 4x3 block
     * you can also select using the mouse and then press `Ctrl`+`v`
 * `gv` select previously highlighted visual area
@@ -1396,22 +1407,22 @@ Visual mode allows you to perform editing tasks on selected portions of text. Th
 * `p` replace the selected text with contents of the default `"` register
     * See [:h v_p](https://vimhelp.org/change.txt.html#v_p) for more details, corner cases, uppercase `P` command behavior, etc
 * `c` clear the selected text and change to Insert mode
-    * for block selection, you can type text and press `Esc` key to replicate that text across all the visually selected lines
-* `C` similar to `c` but clears till end of lines before changing to Insert mode
-* `I` for block selection, press `I`, type text and press `Esc` key to replicate that text across all lines to the left of the column
+    * for block selection, you can type some text and press the `Esc` key to replicate that text across all the visually selected lines
+* `C` similar to `c` but clears till the end of lines before changing to Insert mode
+* `I` for block selection, press `I`, type some text and press the `Esc` key to replicate that text across all lines to the left of the column
     * text will not be inserted for lines shorter than the starting column of selection
-    * if you type multiline text, it will not get replicated
-* `A` for block selection, press `A`, type text and press `Esc` key to replicate that text across all lines to the right of the column
+    * if you type a multiline text, it will not get replicated
+* `A` for block selection, press `A`, type some text and press the `Esc` key to replicate that text across all lines to the right of the column
     * if `$` was used for selection, text will be inserted only after the end of respective lines
     * otherwise, text will be inserted after the selected column and space characters will used to extend shorter lines if any
-    * if you type multiline text, it will not get replicated
+    * if you type a multiline text, it will not get replicated
 * `ra` replace every character of the selected text with `a`
 * `:` perform Command-line mode editing commands like `g`, `s`, `!`, `normal`, etc on the selected text
 * `J` and `gJ` join lines using the same rules as seen in Normal mode
 
 >![info](./images/info.svg) Press `Ctrl`+`c` if you've typed text after using `I` or `A` but don't want to replicate the text across all the lines.
 
->![info](./images/info.svg) See [:h visual-operators](https://vimhelp.org/visual.txt.html#visual-operators) for complete list of commands.
+>![info](./images/info.svg) See [:h visual-operators](https://vimhelp.org/visual.txt.html#visual-operators) for a complete list of commands.
 
 ## Search and Select
 
@@ -1528,16 +1539,16 @@ This chapter will discuss regular expressions (regexp) and related features in d
 * `/searchpattern` search the given pattern in the forward direction
 * `?searchpattern` search the given pattern in the backward direction
 * `:range s/searchpattern/replacestring/flags` search and replace
-    * `:s` is short for `:substitute` command
-    * the delimiter after `replacestring` is optional if you are not using flags
+    * `:s` is short for the `:substitute` command
+    * the delimiter after the `replacestring` portion is optional if you are not using flags
 
 **Documentation links**:
 
 * [:h usr_27.txt](https://vimhelp.org/usr_27.txt.html) — search commands and patterns
 * [:h pattern-searches](https://vimhelp.org/pattern.txt.html) — reference manual for Patterns and search commands
-* [:h :substitute](https://vimhelp.org/change.txt.html#%3Asubstitute) — reference manual for `:substitute` command
+* [:h :substitute](https://vimhelp.org/change.txt.html#%3Asubstitute) — reference manual for the `:substitute` command
 
->![info](./images/info.svg) Recall that you need to add `/` prefix for built-in help on regular expressions, [:h /^](https://vimhelp.org/pattern.txt.html#%2F%5E) for example.
+>![info](./images/info.svg) Recall that you need to add the `/` prefix for built-in help on regular expressions, [:h /^](https://vimhelp.org/pattern.txt.html#%2F%5E) for example.
 
 ## Flags
 
@@ -1547,7 +1558,7 @@ This chapter will discuss regular expressions (regexp) and related features in d
 * `i` ignore case for `searchpattern`
 * `I` don't ignore case for `searchpattern`
 
-These flags are applicable for the substitute command but not `/` or `?` searches. Flags can also be combined, for example:
+These flags are applicable for the substitute command but not the `/` or `?` searches. Flags can also be combined, for example:
 
 * `s/cat/Dog/gi` replace every occurrence of `cat` with `Dog`
     * Case is ignored, so `Cat`, `cAt`, `CAT`, etc will also be replaced
@@ -1557,22 +1568,22 @@ These flags are applicable for the substitute command but not `/` or `?` searche
 
 ## Anchors
 
-By default, regexp will match anywhere in the text. You can use line and word anchors to specify additional restrictions regarding the position of matches. These restrictions are made possible by assigning special meaning to certain characters and escape sequences. The characters with special meaning are known as **metacharacters** in regular expressions parlance. In case you need to match those characters literally, you need to escape them with a `\` (discussed in [Escaping metacharacters](#escaping-metacharacters) section later in this chapter).
+By default, regexp will match anywhere in the text. You can use line and word anchors to specify additional restrictions regarding the position of matches. These restrictions are made possible by assigning special meaning to certain characters and escape sequences. The characters with special meaning are known as **metacharacters** in regular expressions parlance. In case you need to match those characters literally, you need to escape them with a `\` character (discussed in the [Escaping metacharacters](#escaping-metacharacters) section later in this chapter).
 
 * `^` restricts the match to the start-of-line
     * `^This` matches `This is a sample` but not `Do This`
 * `$` restricts the match to the end-of-line
     * `)$` matches `apple (5)` but not `def greeting():`
-* `^$` match empty line
+* `^$` match empty lines
 * `\<pattern` restricts the match to the start of a word
     * word characters include alphabets, digits and underscore
     * `\<his` matches `his` or `to-his` or `history` but not `this` or `_hist`
 * `pattern\>` restricts the match to the end of a word
     * `his\>` matches `his` or `to-his` or `this` but not `history` or `_hist`
-* `\<pattern\>` restricts the match between start of a word and end of a word
+* `\<pattern\>` restricts the match between the start of a word and end of a word
     * `\<his\>` matches `his` or `to-his` but not `this` or `history` or `_hist`
 
->![info](./images/info.svg) End-of-line can be `\r` (carriage return), `\n` (newline) or `\r\n` depending on your system and `fileformat` setting.
+>![info](./images/info.svg) End-of-line can be `\r` (carriage return), `\n` (newline) or `\r\n` depending on your operating system and the `fileformat` setting.
 
 >![info](./images/info.svg) See [:h pattern-atoms](https://vimhelp.org/pattern.txt.html#pattern-atoms) for more details.
 
@@ -1586,12 +1597,12 @@ By default, regexp will match anywhere in the text. You can use line and word an
 
 ## Greedy Quantifiers
 
-Quantifiers can be applied to literal characters, dot metacharacter, groups, backreferences and character classes. Basic examples are shown below, more will be discussed in the sections to follow.
+Quantifiers can be applied to literal characters, the dot metacharacter, groups, backreferences and character classes. Basic examples are shown below, more will be discussed in the sections to follow.
 
 * `*` match zero or more times
     * `abc*` matches `ab` or `abc` or `abccc` or `abcccccc` but not `bc`
     * `Error.*valid` matches `Error: invalid input` but not `valid Error`
-    * `s/a.*b/X/` replaces `table bottle bus` with `tXus` since `a.*b` matches from the first `a` to the last `b`
+    * `s/a.*b/X/` replaces `table bottle bus` with `tXus`
 * `\+` match one or more times
     * `abc\+` matches `abc` or `abccc` but not `ab` or `bc`
 * `\?` match zero or one times
@@ -1612,7 +1623,7 @@ Greedy quantifiers will consume as *much* as possible, provided the overall patt
 
 >![info](./images/info.svg) See [:h pattern-overview](https://vimhelp.org/pattern.txt.html#pattern-overview) for more details.
 
->![info](./images/info.svg) If you are familiar with other regular expression flavors like Perl, Python, etc, you'd be surprised by the use of `\` in the above examples. If you use `\v` very magic modifier (discussed later in this chapter), the `\` won't be needed.
+>![info](./images/info.svg) If you are familiar with other regular expression flavors like Perl, Python, etc, you'd be surprised by the use of `\` in the above examples. If you use the `\v` very magic modifier (discussed later in this chapter), the `\` won't be needed.
 
 ## Non-greedy Quantifiers
 
@@ -1623,15 +1634,15 @@ Non-greedy quantifiers match as *minimally* as possible, provided the overall pa
         * the matching portions are `tha`, `t is quite a` and `ted ta`
     * `s/t.*a/X/g` replaces `that is quite a fabricated tale` with `Xle` since `*` is greedy
 * `\{-m,n}` match `m` to `n` times as minimally as possible
-    * `m` or `n` can be left out as seen in the [Greedy Quantifiers](#greedy-quantifiers) section
+    * `m` or `n` can be left out as seen in the previous section
     * `s/.\{-2,5}/X/` replaces `123456789` with `X3456789` (here `.` matched 2 times)
-    * `s/.\{-2,5}6/X/` replaces `123456789` with `X789` (here `.` matched 5 times to satisfy overall pattern)
+    * `s/.\{-2,5}6/X/` replaces `123456789` with `X789` (here `.` matched 5 times)
 
 >![info](./images/info.svg) See [:h pattern-overview](https://vimhelp.org/pattern.txt.html#pattern-overview) and [stackoverflow: non-greedy matching](https://stackoverflow.com/q/1305853/4082052) for more details.
 
 ## Character Classes
 
-To create a custom placeholder for a limited set of characters, you can enclose them inside `[]` metacharacters. Character classes have their own versions of metacharacters and provide special predefined sets for common use cases.
+To create a custom placeholder for a limited set of characters, you can enclose them inside the `[]` metacharacters. Character classes have their own versions of metacharacters and provide special predefined sets for common use cases.
 
 * `[aeiou]` match any lowercase vowel character
 * `[^aeiou]` match any character other than lowercase vowels
@@ -1664,7 +1675,7 @@ Here are some examples with character classes:
 * `^[on]\{2,}$` matches `no` or `non` or `noon` or `on` etc as whole lines only
 * `s/"[^"]\+"/X/g` replaces `"mango" and "(guava)"` with `X and X`
 * `s/\d\+/-/g` replaces `Sample123string777numbers` with `Sample-string-numbers`
-* `s/\<0*[1-9]\d\{2,}\>/X/g` replaces `0501 035 26 98234` with `X 035 26 X` (matches numbers >=100 with optional leading zeros)
+* `s/\<0*[1-9]\d\{2,}\>/X/g` replaces `0501 035 26 98234` with `X 035 26 X` (numbers >=100 with optional leading zeros)
 * `s/\W\+/ /g` replaces `load2;err_msg--\ant` with `load2 err_msg ant`
 
 >![info](./images/info.svg) To include the end-of-line character, use `\_` instead of `\` for any of the above escape sequences. For example, `\_s` will help you match across lines. Similarly, use `\_[]` for bracketed classes.
@@ -1680,7 +1691,7 @@ Alternation helps you to match multiple terms and they can have their own anchor
 * `\|` match either of the specified patterns
     * `min\|max` matches `min` or `max`
     * `one\|two\|three` matches `one` or `two` or `three`
-    * `\<par\>\|er$` matches whole word `par` or a line ending with `er`
+    * `\<par\>\|er$` matches the whole word `par` or a line ending with `er`
 * `\(pattern\)` group a pattern to apply quantifiers, create a terser regexp by taking out common elements, etc
     * `a\(123\|456\)b` is equivalent to `a123b\|a456b`
     * `hand\(y\|ful\)` matches `handy` or `handful`
@@ -1688,10 +1699,10 @@ Alternation helps you to match multiple terms and they can have their own anchor
     * `\(to\)\+` matches `to` or `toto` or `tototo` and so on
     * `re\(leas\|ceiv\)\?ed` matches `reed` or `released` or `received`
 
-There's some tricky situations when using alternation. Say, you want to match `are` or `spared` — which one should get precedence? The bigger word `spared` or the substring `are` inside it or based on something else? The alternative which matches earliest in the input gets precedence, irrespective of the order of the alternatives.
+There can be tricky situations when using alternation. Say, you want to match `are` or `spared` — which one should get precedence? The bigger word `spared` or the substring `are` inside it or based on something else? The alternative which matches earliest in the input gets precedence, irrespective of the order of the alternatives.
 
 * `s/are\|spared/X/g` replaces `rare spared area` with `rX X Xa`
-    * `s/spared\|are/X/g` will also give the same results
+    * `s/spared\|are/X/g` will also give the same result
 
 In case of matches starting from the same location, for example `spa` and `spared`, the leftmost alternative gets precedence. Sort by longest term first if don't want shorter terms to take precedence.
 
@@ -1700,7 +1711,7 @@ In case of matches starting from the same location, for example `spa` and `spare
 
 ## Backreference
 
-The groupings seen in the previous section are also known as **capture groups**. The string captured by these groups can be referred later using backreference `\N` where `N` is the capture group you want. Backreferences can be used in both search and replacement sections.
+The groupings seen in the previous section are also known as **capture groups**. The string captured by these groups can be referred later using a backreference `\N` where `N` is the capture group you want. Backreferences can be used in both search and replacement sections.
 
 * `\(pattern\)` capture group for later use via backreferences
 * `\%(pattern\)` non-capturing group
@@ -1717,12 +1728,12 @@ Here are some examples:
 * `\(\a\)\1\+` matches two or more consecutive repeated alphabets like `ee`, `ttttt`, `PPPPPPPP` and so on
 * `s/\d\+/(&)/g` replaces `52 apples 31 mangoes` with `(52) apples (31) mangoes` (surround digits with parentheses)
 * `s/\(\w\+\),\(\w\+\)/\2,\1/g` replaces `good,bad 42,24` with `bad,good 24,42` (swap words separated by comma)
-* `s/\(_\)\?_/\1/g` replaces `_foo_ __123__ _baz_` with `foo _123_ baz` (matches one or two underscores, deletes one underscore)
-* `s/\(\d\+\)\%(abc\)\+\(\d\+\)/\2:\1/` replaces `12abcabcabc24` with `24:12` (matches digits separated by one or more `abc` sequences, swaps the numbers with `:` as the separator)
+* `s/\(_\)\?_/\1/g` replaces `_fig __123__ _bat_` with `fig _123_ bat` (reduce `__` to `_` and delete if it is a single `_`)
+* `s/\(\d\+\)\%(abc\)\+\(\d\+\)/\2:\1/` replaces `12abcabcabc24` with `24:12` (match digits separated by one or more `abc` sequences, swap the numbers with `:` as the separator)
     * note the use of non-capturing group for `abc` since it isn't needed later
     * `s/\(\d\+\)\(abc\)\+\(\d\+\)/\3:\1/` does the same if only capturing groups are used
 
-Referring to text matched by a capture group with a quantifier will give only the last match, not entire match. Use a capture group around the grouping and quantifier together to get the entire matching portion. In such cases, the inner grouping is an ideal candidate to use non-capturing group.
+Referring to the text matched by a capture group with a quantifier will give only the last match, not the entire match. Use a capture group around the grouping and quantifier together to get the entire matching portion. In such cases, the inner grouping is an ideal candidate to use non-capturing group.
 
 * `s/a \(\d\{3}\)\+/b (\1)/` replaces `a 123456789` with `b (789)`
     * `a 4839235` will be replaced with `b (923)5`
@@ -1749,18 +1760,18 @@ Lookarounds help to create custom anchors and add conditions within the `searchp
 * `\@<=` positive lookbehind assertion
     * `_\@<=ice` matches `ice` as long as it is immediately preceded by a `_` character, for example `_ice` or `(_ice)` but not `ice` or `_(ice)` or `42ice`
 
->![info](./images/info.svg) ![info](./images/info.svg) ![info](./images/info.svg) You can also specify number of bytes to search for lookbehind patterns. This will significantly speed up the matching process. You have to specify the number between `@` and `<` characters. For example, `_\@1<=ice` will lookback only one byte before `ice` for matching purposes. `\(cat.*\)\@10<!dog` will lookback only ten bytes before `dog` to check the given assertion.
-
+>![info](./images/info.svg) ![info](./images/info.svg) ![info](./images/info.svg) You can also specify the number of bytes to search for lookbehind patterns. This will significantly speed up the matching process. You have to specify the number between the `@` and `<` characters. For example, `_\@1<=ice` will lookback only one byte before `ice` for matching purposes. `\(cat.*\)\@10<!dog` will lookback only ten bytes before `dog` to check the given assertion.
 
 ## Atomic Grouping
 
-As discussed earlier, both greedy and non-greedy quantifiers will try to satisfy the overall pattern by varying the amount of characters matched by the quantifiers. You can use atomic grouping if you do not want a specific sub-pattern to ever give back characters it has already matched. Similar to lookarounds, you need to use `\@>` as a suffix, for example `\(pattern\)\@>`.
+As discussed earlier, both greedy and non-greedy quantifiers will try to satisfy the overall pattern by varying the amount of characters matched by the quantifiers. You can use atomic grouping to safeguard a pattern from further backtracking. Similar to lookarounds, you need to use `\@>` as a suffix, for example `\(pattern\)\@>`.
 
 * `s/\(0*\)\@>\d\{3,\}/(&)/g` replaces only numbers >= 100 irrespective of any number of leading zeros, for example `0501 035 154` is converted to `(0501) 035 (154)`
     * `\(0*\)\@>` matches the `0` character zero or more times, but it will not give up this portion to satisfy overall pattern
     * `s/0*\d\{3,\}/(&)/g` replaces `0501 035 154` with `(0501) (035) (154)` (here `035` is matched because `0*` will match zero times to satisfy the overall pattern)
-
->![info](./images/info.svg) Some regexp engines provide this feature as **possessive quantifiers**.
+* `s/\(::.\{-}::\)\@>par//` replaces `fig::1::spar::2::par::3` with `fig::1::spar::3`
+    * `\(::.\{-}::\)\@>` will match only from `::` to the very next `::`
+    * `s/::.\{-}::par//` replaces `fig::1::spar::2::par::3` with `fig::3` (matches from the first `::` to the first occurrence of `::par`)
 
 ## Set start and end of the match
 
@@ -1787,24 +1798,24 @@ These escape sequences change certain aspects of the syntax and behavior of the 
     * `\.`, `\*` and `\~` will make them to behave as metacharacters
     * `^` and `$` would still behave as metacharacters
     * `\Ma.b` matches only `a.b`
-    * `\Ma\.b` matches `a.b` as well as `a=b` or `a<b` or `acd` etc
+    * `\Ma\.b` matches `a.b` as well as `a=b` or `a<b` or `acb` etc
 
 ### Very magic
 
-The default syntax of Vim regexp has only a few metacharacters like `.`, `*`, `^` and so on. If you are familiar with regexp usage in programming languages such as Perl, Python and JavaScript, you can use `\v` to get a similar syntax in Vim. This will allow the use of more metacharacters such as `()`, `{}`, `+`, `?` and so on without having to prefix them with a `\` metacharacter. From [:h magic](https://vimhelp.org/pattern.txt.html#%2Fmagic) documentation:
+The default syntax of Vim regexp has only a few metacharacters like `.`, `*`, `^` and `$`. If you are familiar with regexp usage in programming languages such as Perl, Python and JavaScript, you can use `\v` to get a similar syntax in Vim. This will allow the use of more metacharacters such as `()`, `{}`, `+`, `?` and so on without having to prefix them with a `\` metacharacter. From [:h magic](https://vimhelp.org/pattern.txt.html#%2Fmagic) documentation:
 
 >Use of `\v` means that after it, all ASCII characters except `0`-`9`, `a`-`z`, `A`-`Z` and `_` have special meaning
 
 * `\v<his>` matches `his` or `to-his` but not `this` or `history` or `_hist`
 * `a<b.*\v<end>` matches `c=a<b #end` but not `c=a<b #bending`
-    * note that `\v` is used after `a<b` to avoid having to escape `<`
+    * note that `\v` is used after `a<b` to avoid having to escape the first `<`
 * `\vone|two|three` matches `one` or `two` or `three`
 * `\vabc+` matches `abc` or `abccc` but not `ab` or `bc`
 * `s/\vabc?/X/` replaces `abcc` with `Xc`
 * `s/\vt.{-}a/X/g` replaces `that is quite a fabricated tale` with `XX fabricaXle`
 * `\vab{3}c` matches `xabbbcz` but not `abbc` or `abbbbbc`
 * `s/\v(\w+),(\w+)/\2,\1/g` replaces `good,bad 42,24` with `bad,good 24,42`
-    * compare this to default syntax: `s/\(\w\+\),\(\w\+\)/\2,\1/g`
+    * compare this to the default mode: `s/\(\w\+\),\(\w\+\)/\2,\1/g`
 
 ### Very nomagic
 
@@ -1828,7 +1839,7 @@ These will override flags and settings, if any. Unlike the magic modifiers, you 
 * `\C` case sensitive search
     * `\Cthis` match exactly `this` but not `This` or `THIs` and so on
         * `th\Cis` or `this\C` and so on will also result in the same behavior
-* `s/\Ccat/dog/gi` replaces `cat Cat CAT` with `dog Cat CAT` since `i` flag gets overridden
+* `s/\Ccat/dog/gi` replaces `cat Cat CAT` with `dog Cat CAT` since the `i` flag gets overridden
 
 ## Changing Case
 
@@ -1870,7 +1881,7 @@ Certain characters like tab, carriage return, newline, etc have escape sequences
 * `\b` backspace character
 * `\r` matches carriage return for `searchpattern`, produces newline for `replacestring`
 * `\n` matches end-of-line for `searchpattern`, produces ASCII NUL for `replacestring`
-    * `\n` can also match `\r` or `\r\n` (where `\r` is carriage return) depending upon `fileformat` setting
+    * `\n` can also match `\r` or `\r\n` (where `\r` is carriage return) depending upon the `fileformat` setting
 * `\%d` matches character specified by decimal digits
     * `\%d39` matches the single quote character
 * `\%o` matches character specified by octal digits
@@ -1891,46 +1902,46 @@ To match the metacharacters literally (including character class metacharacters 
 * `^` and `$` do not require escaping if they are used out of position
     * `b^2` matches `a^2 + b^2 - C*3`
     * `$4` matches `this ebook is priced $40`
-    * `\^super` matches `^superscript` (you need to escape here since `^` is at the customary position)
+    * `\^super` matches `^superscript` (you need the `\` here since `^` is at the customary position)
 * `[` and `]` do not require escaping if only one of them is used
     * `b[1` matches `ab[123`
     * `42]` matches `xyz42] =`
     * `b\[123]` or `b[123\]` matches `ab[123] = d`
-* `[` in substitute command requires careful consideration 
+* `[` in the substitute command requires careful consideration 
     * `s/b[1/X/` replaces `b[1/X/` with nothing
     * `s/b\[1/X/` replaces `ab[123` with `aX23`
 * `\Va*b.c` or `a\*b\.c` matches `a*b.c`
-* `&` in replacement section requires escaping to represent it literally
+* `&` in the replacement section requires escaping to represent it literally
     * `s/and/\&/` replaces `apple and mango` with `apple & mango`
 
 The following can be used to match character class metacharacters literally in addition to escaping them with a `\` character:
 
-* `-` can be specified at the start or the end of the list, for example `[a-z-]`
+* `-` can be specified at the start or end of the list, for example `[-0-5]` and `[a-z-]`
 * `^` should be other than the first character, for example `[+a^.]`
 * `]` should be the first character, for example `[]a-z]` and `[^]a]`
 
 ## Replacement expressions
 
 * `\=` when `replacestring` starts with `\=`, it is treated as an expression
-* `s/date:\zs/\=strftime("%Y-%m-%d")/` appends current date
-    * for example, changes `date:` to `date:2022-02-17`
+* `s/date:\zs/\=strftime("%Y-%m-%d")/` appends the current date
+    * for example, changes `date:` to `date:2024-06-25`
 * `s/\d\+/\=submatch(0)*2/g` multiplies matching numbers by 2
     * for example, changes `4 and 10` to `8 and 20`
     * `submatch()` function is similar to backreferences, `0` gives the entire matched string, `1` refers to the first capture group and so on
 * `s/\(.*\)\zs/\=" = " . eval(submatch(1))/` appends result of an expression
     * for example, changes `10 * 2 - 3` to `10 * 2 - 3 = 17`
     * `.` is the string concatenation operator
-    * `eval()` here executes the contents of first capture group as an expression
+    * `eval()` here executes the contents of the first capture group as an expression
 * `s/"[^"]\+"/\=substitute(submatch(0), '[aeiou]', '\u&', 'g')/g` affects vowels only inside double quotes 
     * for example, changes `"mango" and "guava"` to `"mAngO" and "gUAvA"`
     * `substitute()` function works similarly to the `s` command
     * first argument is the text to work on
     * second argument is similar to `searchpattern`
     * third argument is similar to `replacestring`
-    * fourth argument is flags, use empty string if not required
+    * fourth argument is flags, use an empty string if not required
     * see [:h substitute()](https://vimhelp.org/builtin.txt.html#substitute%28%29) for more details and differences compared to the `s` command
 * `perldo s/\d+/$&*2/ge` changes `4 and 10` to `8 and 20`
-    * useful if you are familiar with Perl regular expressions and `perl` interface is available with your Vim installation
+    * useful if you are familiar with Perl regular expressions and the `perl` interface is available with your Vim installation
     * note that the default range is `1,$` (the `s` command works only on the current line by default)
     * see [:h perldo](https://vimhelp.org/if_perl.txt.html#%3Aperldo) for restrictions and more details
 
@@ -1942,7 +1953,7 @@ The following can be used to match character class metacharacters literally in a
 
 ## Miscellaneous
 
-* `\%V` match inside visual area only
+* `\%V` match inside the visual area only
     * `s/\%V10/20/g` replaces `10` with `20` only inside the visual area
     * without `\%V`, the replacement would happen anywhere on the lines covered by the visual selection
 * `\%[set]` match zero or more of these characters in the same order, as much as possible
@@ -1966,7 +1977,7 @@ The following can be used to match character class metacharacters literally in a
 
 The `.` repeat command repeats only the last change. And it gets overwritten with every change. The `q` command allows you to record a *sequence of commands* and execute them later whenever you need. You can make it recursive, add a count prefix, combine it with Command-line mode commands and so on. Powerful indeed!
 
-With so many built-in features, sometimes it isn't easy to choose. I prefer the substitute command to macros if both of them can be used for the given problem, especially if the processing doesn't require multiple lines to be considered at once for the solution. That said, macros are more flexible, having an inherent advantage of being able to easily integrate numerous Vim commands.
+With so many built-in features, sometimes it isn't easy to choose. I prefer the substitute command to macros if both of them can be used for the given problem, especially if the processing doesn't require multiple lines to be considered at once for the solution. That said, macros are more flexible, having an inherent advantage of being able to easily integrate numerous Vim commands. Also, macros allow you to progress in smaller chunks, which might be easier compared to a complicated regexp based solution.
 
 **Documentation links**:
 
@@ -1975,11 +1986,11 @@ With so many built-in features, sometimes it isn't easy to choose. I prefer the 
 
 ## Macro usage steps
 
-Here's a rough overview of `q` command usage. Working examples will be discussed in later sections.
+Here's a rough overview of the `q` command usage. Working examples will be discussed in later sections.
 
 1) Press `q` to start the recording
 2) Use any alphanumeric character as the register to store the recording (for example, `a`)
-3) Add command sequence to accomplish the required task
+3) Execute command sequence to accomplish the required task
 4) Press `q` again to stop the recording
 5) Press `@a` (the register used in step 2) to execute the recorded command sequence
     * `5@a` execute the macro `5` times
@@ -1987,9 +1998,9 @@ Here's a rough overview of `q` command usage. Working examples will be discussed
 
 >![info](./images/info.svg) Command-line area will show `recording @a` after step 2 and this indicator vanishes after step 4.
 
->![info](./images/info.svg) Note that these registers are shared across recording, delete and yank commands. You'll see how this helps to modify a recording later, but you should also be careful not to mix them if you want separate recording and paste use cases. As mentioned earlier in Normal mode chapter, uppercase registers will append to existing content in lowercase registers.
+>![info](./images/info.svg) Note that these registers are shared across recording, delete and yank commands. You'll see how this helps to modify a recording later, but you should also be careful not to mix them if you want separate recording and paste use cases. As mentioned earlier in the Normal mode chapter, uppercase registers will append to existing content in lowercase registers.
 
->![info](./images/info.svg) See also [vi.stackexchange: Can I repeat a macro with the "dot operator"?](https://vi.stackexchange.com/q/11210/1616) (one of the solutions will allow you to use `.` command to execute a macro immediately after recording as well).
+>![info](./images/info.svg) See also [vi.stackexchange: Can I repeat a macro with the "dot operator"?](https://vi.stackexchange.com/q/11210/1616) (one of the solutions will allow you to use the `.` command to execute a macro immediately after recording as well).
 
 ## Example 1
 
@@ -2000,8 +2011,8 @@ The `qwceHello^[q` macro recording clears text till the end of the word and inse
 * `ce` change till the end of the word
 * `Hello` insert these characters
 * `^[` this is a single character that denotes the `Esc` key
-    * in other words, press `Esc` key for this step, *don't* type `^` and `[` characters
-    * you'll see this representation if you paste the contents of `"w` register using `"wp`
+    * in other words, press `Esc` key for this step, *don't* type the `^` and `[` characters
+    * you'll see this representation if you paste the contents of the `"w` register using `"wp`
 * `q` stop recording
 
 After you've recorded the macro, you can execute this command sequence anywhere else you need it. For example, if the cursor is on the fourth character of the text `Hi-there` and `@w` is pressed, you'll get `Hi-Hello`.
@@ -2021,7 +2032,7 @@ After you've modified the register contents, check if it is working as expected.
 
 >![info](./images/info.svg) In case you wish to create a new macro from scratch by just typing the required text instead of using the `q` command, you'll find `Ctrl`+`v` (or the `Ctrl`+`q` alias) useful to insert keys like `Esc` and `Enter`. To do so, press `Ctrl`+`v` followed by the required key. You'll get `^[` for `Esc`, `^M` for `Enter` and so on.
 
->![info](./images/info.svg) `let @w = "ce'Hello'!^["` adding this line to `vimrc` file will load the `"w` register with the given text at startup.
+>![info](./images/info.svg) `let @w = "ce'Hello'!^["` adding this line to the `vimrc` file will load the `"w` register with the given text at startup.
 
 ## Example 2
 
@@ -2043,11 +2054,11 @@ if($word eq reverse $word)
 
 * `qp` start recording and use register `p`
 * `o` open a new line
-* `{` insert `{` character
+* `{` insert the `{` character
 * `^[` go back to Normal mode (`Esc` key)
 * `j` move down one line
 * `o` open another line
-* `}` insert `}` character
+* `}` insert the `}` character
 * `^[` go back to Normal mode (`Esc` key)
 * `q` stop recording
 
@@ -2085,8 +2096,9 @@ You can do a recording as usual, select these lines visually (or use a range) an
 
 * `0f:l` Move to beginning of the line and then move the cursor to the character after the first occurrence of `:` (which is a space character in the above snippet)
     * this also assumes that there won't be any `:` character as part of the function arguments
-* `r^M` replace the space character with newline character
+* `r^M` replace the space character with a newline character
 * `>>` indent the line
+    * note that this won't be required if indentation is automatically applied based on Python syntax
 * `o^[` open a new line and go back to Normal mode
 * `j` move to the next line (this makes it possible to use the count prefix)
 
@@ -2106,12 +2118,11 @@ def isodd(n):
 
 Suppose the Python function definitions discussed above aren't next to each other but can be found anywhere in the Python script file. In such cases, if you are able to reliably identify the lines using a regexp filter, you can use the `:g` command.
 
-* `qdf:lr^M>>oq` simplified macro
+* `qdf:lr^M>>o^[q` simplified macro
     * `0` not required since the cursor starts at the beginning
-    * no need to return to Normal mode after opening a new line
     * no need to move to the next line
-* `:g/^def.*): / normal @d` apply the macro for filtered lines
-* `:%s/^def.*):\zs \(.*\)/\r\t\1\r/` if you are comfortable with regexp, you could also just use the substitution command like this one instead
+* `:g/^def .*): / normal @d` apply the macro for filtered lines
+* `:%s/^def .*):\zs \(.*\)/\r\t\1\r/` if you are comfortable with regexp, you could also just use the substitution command like this one instead
 
 ## Recursive recording
 
@@ -2163,7 +2174,7 @@ Given the following text:
 # Visual mode
 ```
 
-Use a macro (or substitute command if you prefer) to get the modified text as shown below:
+Use a macro (or the substitute command if you prefer) to get the modified text as shown below:
 
 ```md
 * [Introduction](#introduction)
@@ -2175,7 +2186,7 @@ Use a macro (or substitute command if you prefer) to get the modified text as sh
 ## Further Reading
 
 * [Advanced vim macros](https://blog.sanctum.geek.nz/advanced-vim-macros/)
-* [Vim Macro Trickz](https://www.hillelwayne.com/vim-macro-trickz/)
+* [Vim Macro Trickz](https://www.hillelwayne.com/post/vim-macro-trickz/)
 * [vi.stackexchange: top Q&A on macro](https://vi.stackexchange.com/questions/tagged/macro?tab=Votes)
 
 # Customizing Vim
@@ -2227,10 +2238,10 @@ Alternatively, you can copy only the parts you want to retain from the `defaults
     * as mentioned in the Command-line mode chapter, there are separate history lists for `:` commands, search patterns, etc
 * `set nobackup` disable backup files
 * `set noswapfile` disable swap files
-* `colorscheme murphy` use a dark theme
+* `colorscheme murphy` a dark theme
     * you can use `:colorscheme` followed by a space and then press `Tab` or `Ctrl`+`d` to get a list of the available color schemes
-* `set showcmd` show partial Normal mode command on Command-line and character/line/block-selection for Visual mode
-* `set wildmode=longest,list,full` use `bash` like tab completion
+* `set showcmd` Command-line area will show partial Normal mode commands and character/line/block-selection for Visual mode
+* `set wildmode=longest,list,full` use `bash`-like tab completion
     * first tab will complete as much as possible
     * second tab will provide a list
     * third and subsequent tabs will cycle through the completion options
@@ -2252,7 +2263,7 @@ Alternatively, you can copy only the parts you want to retain from the `defaults
     * `:echo $VIMRUNTIME` gives your installation directory (`indent` and `plugin` directories would be present in this path)
     * see [:h vimrc-filetype](https://vimhelp.org/usr_05.txt.html#vimrc-filetype), [:h :filetype-overview](https://vimhelp.org/filetype.txt.html#%3Afiletype-overview) and [:h filetype.txt](https://vimhelp.org/filetype.txt.html) for more details
 * `set autoindent` copy indent from the current line when starting a new line
-    * useful for files not affected by `indent` setting
+    * useful for files not affected by the `indent` setting
     * see also [:h smartindent](https://vimhelp.org/options.txt.html#%27smartindent%27)
 * `set textwidth=80` guideline for Vim to automatically move to a new line with `80` characters as the limit
     * white space is used to break lines, so a line can still be greater than the limit if there's no white space
@@ -2268,11 +2279,11 @@ Alternatively, you can copy only the parts you want to retain from the `defaults
 ## Search Settings
 
 * `set hlsearch` highlight all matching portions
-    * using `:noh` (short for `:nohlsearch`) will clear the current highlighted portions
+    * using `:noh` (short for `:nohlsearch`) will clear the currently highlighted portions
 * `set incsearch` highlights current match as you type the pattern, the screen is updated automatically as needed
-    * pressing `Enter` key would move the cursor to the matched portion
-    * pressing `Esc` key would keep the cursor at the current location
-    * other matching terms will be highlighted based on `hlsearch` setting
+    * pressing the `Enter` key would move the cursor to the matched portion
+    * pressing the `Esc` key would keep the cursor at the current location
+    * other matching terms will be highlighted based on the `hlsearch` setting
 
 ## Custom mapping
 
@@ -2300,14 +2311,14 @@ The following will not be discussed, but you might find it useful to know or exp
     * I chose `F2` since it is close to the `Esc` key (`F1` opens help page)
 * `nnoremap <F3> :wq<CR>` press `F3` to save changes and quit
 * `nnoremap <F4> ggdG` press `F4` to delete everything
-* `nnoremap <F5> :%y+<CR>` press `F5` to copy everything to system clipboard
-* `nnoremap <left> <nop>` do nothing when `←` arrow key is pressed
-    * likewise, you can map the other arrow keys to do nothing as well
+* `nnoremap <F5> :%y+<CR>` press `F5` to copy everything to the system clipboard
+* `nnoremap <left> <nop>` do nothing when the `←` arrow key is pressed
+    * likewise, you can map the other arrow keys to do nothing
 * `nnoremap Y y$` change `Y` to behave similarly to `D` and `C`
 * `nnoremap / /\v` add very magic mode modifier for forward direction search
 * `nnoremap ? ?\v` add very magic mode modifier for backward direction search
 * `nnoremap <silent> <Space> :noh<CR><Space>` press `Space` key to clear the currently highlighted portions
-    * `<silent>` modifier executes the command without displaying on Command-line
+    * `<silent>` modifier executes the command without displaying in the Command-line area
     * Note that this mapping also retains the default behavior of the `Space` key
 * `nnoremap <A-1> 1gt` press `Alt`+`1` to switch to the first tab
     * I prefer this to make switching tabs consistent with browser and terminal shortcuts
@@ -2330,7 +2341,7 @@ Normal mode commands are already crowded, so if you are looking to create new co
 ### Insert mode
 
 * `inoremap <F2> <C-o>:w<CR>` press `F2` to save changes in Insert mode as well
-    * `Ctrl`+`o` to execute a command and return back to Insert mode automatically
+    * `Ctrl`+`o` is used here to execute a command and return back to Insert mode automatically
     * `imap <F2> <C-o><F2>` can also be used if you've already defined the Normal mode mapping
 * `inoremap <C-f> <Esc>ea` press `Ctrl`+`f` to move to the end of the word
     * I'd prefer `Ctrl`+`e` but that is useful to cancel autocompletion
@@ -2359,7 +2370,7 @@ Abbreviations are usually used to correct typos and insert frequently used text.
 >An abbreviation is only recognized when you type a non-keyword character. This can also be the `<Esc>` that ends insert mode or the `<CR>` that ends a command. The non-keyword character which ends the abbreviation is inserted after the expanded abbreviation. An exception to this is the character `<C-]>`, which is used to expand an abbreviation without inserting any extra characters.
 
 * `inoreabbrev p #!/usr/bin/env perl<CR>use strict;<CR>use warnings;<CR>` expand `p` to the text as shown in the code snippet below
-    * you can trigger the abbreviation completion using non-keyword character such as `Esc`, `Space` and `Enter` keys, punctuation characters and so on
+    * you can trigger the abbreviation completion using non-keyword characters such as `Esc`, `Space` and `Enter` keys, punctuation characters and so on
     * use `Ctrl`+`]` to expand the abbreviation without adding anything extra
 
     ```perl
@@ -2374,7 +2385,7 @@ Abbreviations are usually used to correct typos and insert frequently used text.
     * you can use something like `[p` or `@p` instead
 * `inoreabbrev teh the` automatically correct `teh` typo to `the`
 * `inoreabbrev @a always @()<CR>begin<CR>end<Esc>2k$` expand `@a` to the text as shown in the code snippet below
-    * this one works best when you type `@a` followed by `Esc` key to place the cursor at the end of the first line
+    * this one works best when you type `@a` followed by the `Esc` key to place the cursor at the end of the first line
 
     ```verilog
     always @()
@@ -2388,9 +2399,9 @@ Abbreviations are usually used to correct typos and insert frequently used text.
 
 ## Matching Pairs
 
-* `set matchpairs+=<:>` add `<>` to the list of pairs matched by `%` command in Normal mode
+* `set matchpairs+=<:>` add `<>` to the list of pairs matched by the `%` command in Normal mode
 
->![info](./images/info.svg) To match keywords like `if`-`else` pairs with `%`, you can install `matchit.vim` plugin. This supports filetypes such as HTML, Vim, LaTeX, XML, etc. See [:h matchit-install](https://vimhelp.org/usr_05.txt.html#05.5) for more details.
+>![info](./images/info.svg) To match keywords like `if`-`else` pairs with `%`, you can use the `matchit.vim` plugin. This supports filetypes such as HTML, Vim, LaTeX, XML, etc. See [:h matchit-install](https://vimhelp.org/usr_05.txt.html#05.5) for more details.
 
 ## GUI options
 
@@ -2407,7 +2418,7 @@ Make sure to backup your directory (`~/.vim` for example) and the `vimrc` file, 
 
 ### plugin
 
-Some plugins are loaded by default. Some come with Vim installation but you have to explicitly enable them. You can also [write your own](https://vimhelp.org/usr_41.txt.html#write-plugin) or add plugins written by others. From [:h add-plugin](https://vimhelp.org/usr_05.txt.html#add-plugin):
+Some plugins are loaded by default. Some come with Vim installation but you have to explicitly enable them. You can also [write your own](https://vimhelp.org/usr_51.txt.html#write-plugin) or add plugins written by others. From [:h add-plugin](https://vimhelp.org/usr_05.txt.html#add-plugin):
 
 >Vim's functionality can be extended by adding plugins. A plugin is nothing more than a Vim script file that is loaded automatically when Vim starts.
 >
@@ -2428,10 +2439,10 @@ If you have multiple related plugin files, you can put them under a subdirectory
 
 ```bash
 $ mkdir -p ~/.vim/plugin/python
-$ cp plugin_files.vim ~/.vim/plugin/python/
+$ cp file_1.vim file_2.vim ~/.vim/plugin/python/
 ```
 
-If you want to add plugins that should work based on specific filetype, add them to the `ftplugin` directory:
+If you want to add plugins that should work based on a specific filetype, add them to the `ftplugin` directory:
 
 ```bash
 $ mkdir -p ~/.vim/ftplugin
@@ -2447,8 +2458,8 @@ Packages make it easy to manage projects that require multiple plugins, use a ve
 >The Vim distribution comes with a few packages that you can optionally use. For example, the matchit plugin.
 
 * `packadd! matchit` enable `matchit` package
-    * this plugin comes with Vim, see `:h matchit` for further details
-    * `!` is used to prevent loading this plugin when Vim is started with `--noplugin` CLI option
+    * this plugin comes with Vim, see [:h matchit](https://vimhelp.org/matchit.txt.html) for further details
+    * `!` is used to prevent loading this plugin when Vim is started with the `--noplugin` CLI option
 
 [vim-surround](https://github.com/tpope/vim-surround) is used here as an example for a third-party package. Installation instructions (provided in this repository) are shown below, assuming you want to enable this package at startup:
 
@@ -2531,9 +2542,11 @@ augroup END
     * `BufWritePre` event that triggers on writing a file
     * `Black` command to be executed (see [black vim plugin documentation](https://black.readthedocs.io/en/stable/integrations/editors.html#vim) for more details)
 * `augroup` helps you to group related autocommands
-* `autocmd!` removes all autocommands within the group `pyg` in the above example
-    * useful to avoid autocommands getting defined twice when you source the `vimrc` file
+* `autocmd!` removes all autocommands within a group (`pyg` in the above example)
+    * useful to avoid autocommands getting defined again when you source the `vimrc` file
 * `:autocmd` list all autocommands, you can provide arguments to narrow down this listing
+
+>![info](./images/info.svg) ![warning](./images/warning.svg) Note that in earlier versions of Vim, double quotes is used for comments as shown in the above snippet. You'll need to use the `#` character instead for `vim9script`. See [vim9-conversion-aid](https://github.com/ubaldot/vim9-conversion-aid) for upgrading old scripts.
 
 **See also:**
 
@@ -2561,7 +2574,7 @@ augroup END
 
 # CLI options
 
-This chapter discusses some of the options you can use when starting Vim from the command line. Examples given are based on Unix/Linux system. Syntax and features might vary for other platforms like Windows.
+This chapter discusses some of the options you can use when starting Vim from the command line. A Unix/Linux distribution is assumed for the examples shown in this chapter. Syntax and features might vary for other platforms like Windows.
 
 **Documentation links**:
 
@@ -2571,7 +2584,7 @@ This chapter discusses some of the options you can use when starting Vim from th
 
 ## Default
 
-* `gvim` opens a new unnamed buffer when filename is not specified
+* `gvim` opens a new unnamed buffer when a filename is not specified
 * `gvim script.py` opens `script.py`
     * creates a blank buffer if `script.py` doesn't exist, file will be created only after you explicitly issue write commands
 * `gvim report.log power.log area.log` opens the specified files
@@ -2585,26 +2598,26 @@ This chapter discusses some of the options you can use when starting Vim from th
 
 ## Tabs and Splits
 
-* `gvim -p *.log` opens specified files as separate tab pages
+* `gvim -p *.log` opens the specified files as separate tab pages
     * by default, you can open a maximum of `10` pages, use the `tabpagemax` setting if you want to change this number
-* `gvim -o *.log` opens specified files as horizontal splits
-* `gvim -O *.log` opens specified files as vertical splits
+* `gvim -o *.log` opens the specified files as horizontal splits
+* `gvim -O *.log` opens the specified files as vertical splits
 
 >![info](./images/info.svg) You can append a number to each of these options to specify how many tabs or splits you want. For example, `gvim -p3 *.py` opens three tabs irrespective of the number of input files. Empty buffers will be used if there aren't enough input files to satisfy the given number.
 
 ## Easy mode
 
 * `gvim -y` opens in Insert mode and behaves like a click-and-type editor
-    * useful for those who just want a simple text editor that works like `notepad`, `gedit`, etc
+    * useful for those who just want a simple text editor
     * or, perhaps you can [prank Vim users](https://learnbyexample.github.io/mini/vim-prank/) by setting `alias vim='vim -y'`
     * use `Ctrl`+`l` or `Ctrl`+`o` if you want to use Normal mode commands
 
->![info](./images/info.svg) See also [novim-mode](https://github.com/tombh/novim-mode) plugin, which aims to make Vim behave more like a 'normal' editor.
+>![info](./images/info.svg) See also [novim-mode](https://github.com/tombh/novim-mode) plugin, which aims to make Vim behave more like a *normal* editor.
 
 ## Readonly and Restricted modes
 
 * `gvim -R` Readonly mode
-    * changes can still be made and saved despite warning messages shown
+    * changes can still be made and saved despite warning messages
     * for example, by using `:w!`
 * `gvim -M` *stricter* Readonly mode
     * changes cannot be made unless `:set modifiable` is used
@@ -2635,10 +2648,10 @@ This chapter discusses some of the options you can use when starting Vim from th
 ## Quickfix
 
 * `gvim -q <(grep -Hn 'search' *.py)` interactively edit the matching lines from `grep` output
-    * `-H` and `-n` options ensure filename and line number prefix for the matching lines
+    * `-H` and `-n` options provide filename and line number prefix for the matching lines
     * use `:cn` and `:cp` to navigate to the next and previous occurrences respectively
-    * Command-line area at the bottom will show number of matches and filenames
-    * you can also use `gvim -q file` if you save the `grep` output to that file
+    * Command-line area at the bottom will show the number of matches and filenames
+    * you can also use `gvim -q file` if you had saved the `grep` output to that file
 * `gvim -q error.log` edit source code based on compiler output containing filenames and line numbers for the error locations
     * here, the `error.log` is assumed to be the filename used to save the error messages
 
@@ -2649,7 +2662,7 @@ This chapter discusses some of the options you can use when starting Vim from th
 ## Vimrc and Plugins
 
 * `gvim -u file` uses the given file for initialization instead of `vimrc` files
-    * useful to test plugins, apply different `vimrc` based on which project you are working on, etc
+    * useful to test plugins, apply a different `vimrc` based on which project you are working on, etc
 * `gvim -u NONE` all initializations are skipped
 * `gvim -u DEFAULTS` similar to `NONE`, but `defaults.vim` is loaded
 * `gvim -u NORC` similar to `NONE`, but plugins are loaded
